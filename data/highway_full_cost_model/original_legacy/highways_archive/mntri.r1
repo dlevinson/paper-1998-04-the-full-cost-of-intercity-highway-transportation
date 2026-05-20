@@ -1,0 +1,41 @@
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   MNTRI
+
+
+
+Multiple R           .89603
+R Square             .80287
+Adjusted R Square    .73119
+Standard Error  15141.89260
+
+Analysis of Variance
+                    DF      Sum of Squares      Mean Square
+Regression          12   30815152846.99235 2567929403.91603
+Residual            33    7566138075.00765  229276911.36387
+
+F =      11.20012       Signif F =  .0000
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   MNTRI
+
+
+------------------ Variables in the Equation ------------------
+
+Variable              B        SE B       Beta         T  Sig T
+
+VMTRI           .834055    2.210153    .093188      .377  .7083
+RTRUSING     117.906406  387.205284    .034271      .305  .7627
+NEWYORK    67888.113967 16802.11073    .342737     4.040  .0003
+MIDWEST     1429.774092 8193.713924    .020416      .174  .8625
+ALASKA     -12483.06576 20101.26250   -.063022     -.621  .5389
+NORTHEAS    4947.332481 9408.201530    .064919      .526  .6025
+CALIFORN   -23973.25409 25199.14032   -.121030     -.951  .3483
+RTRUCOM      119.410829  421.384154    .032703      .283  .7787
+SOUTHEAS    4838.257818 8368.652884    .078519      .578  .5671
+MILRISQ         .030990     .007940    .903951     3.903  .0004
+RMILGT4       26.229622   90.300691    .046715      .290  .7733
+MILRI        -15.691264   23.732717   -.220351     -.661  .5131
+(Constant) -5842.146763 9321.547155                -.627  .5351

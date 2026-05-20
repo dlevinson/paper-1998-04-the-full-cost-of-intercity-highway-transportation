@@ -1,0 +1,56 @@
+Highway Cost Modeling
+
+Data Year = 1992
+
+Urban vs. Rural
+
+(1) Dependent Variables
+
+(a) Capital
+	State Admin
+	Local Admin
+	Fed Roads
+	Total *****
+
+(b) Maintenance
+	State Admin
+	Local Admin
+	Fed Roads
+	Total *****
+(c) Administration and Miscellaneous
+(d) Highway Law Enforcement and Safety
+(e) Interest
+(f) Bond Retirement
+(g) Total Disbursements 
+
+(2) Independent Variables
+(a) Supply - Existing Infrastructure
+	Linear Miles
+	Lane Miles
+Theory - maint, admin, int, bonds are f(linear miles, lanes miles)
+(b) Usage VMT
+	Rural Interstate
+	Rural Local
+	Urban Interstate
+	Urban Local
+Theory - Usage wears down road, results in accidents - requres more law enforce, etc.
+(c) Usage TYPE
+	Cars
+	Trucks (by type)
+Theory Trucks more damaging than cars
+(d) Usage INTENSITY
+	VMT/Lane Miles
+	TRUCKS/Lane Miles
+Theory Heavily used roads cost more per mile
+
+
+(e) Geographical Dummies
+Theory: Geography indicates wear and tear due to weather, other state policies, etc.
+
+Also Interaction Terms
+Also non-linear relationships
+Also Heteroskedasticity
+
+Issue: Historical Cost vs. Current Cost
+
+

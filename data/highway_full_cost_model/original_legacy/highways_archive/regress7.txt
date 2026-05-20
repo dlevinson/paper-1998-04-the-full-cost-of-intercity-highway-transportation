@@ -1,0 +1,242 @@
+           SPSS/PC+ The Statistical Package for IBM PC                  9/19/95
+
+* FROM TIME SERIES DATA (1988)
+* STATE YEAR HIGHWAY GSP TOTPUB PVTCAP AREA ROWAY TCAPO TMANT
+* HIGHWAY - Highway Capital
+* GSP - Gross State Product
+* TOTPUB - Total Public Capital (incl. Highways)
+* PVTCAP - Total Private Capital
+* AREA - Area in Square Miles
+* ROWAY - Right of Way Capital Outlay
+* TCAPO - Total Capital Outlay
+* TMANT - Total Maintenance
+* FROM HIGHWAY STATISTICS 1993
+* U - URBAN, R - RURAL, I - INTERSTATE, L - LOCAL, T - TOTAL, F -FREEWAY
+* CAP - CAPITAL, MNT - MAINTENANCE
+* MIL - MILES , gt4  greater than 4 lanes, le4 less than or equal to four
+* PASSVEH - % Passenger Vehiles
+* TRUSING - % Single Truck
+* TRUCOMB - % Combination Truck
+* VMT - Vehicle Miles Traveled
+* ALASKA NEWYORK CALIFORN SOUTHEAST MIDWEST NORTHEAST - Dummies
+* STADMH - State Administered Highways
+* LADMRD - Locally Administered Roads
+* FEDROAD - Federally Administered Roads
+
+*DATA LIST FILE 'C:\HIGHWAYS\HIGHWAY3.TXT' FREE / STATE1 (A)
+*   YEAR HIGHWAY GSP TOTPUB PVTCAP AREA ROWAY TCAPO TMANT
+*   STATE2 (A)
+*   CAPUI   CAPUL   CAPUT   MNTUI  MNTUL   MNTUT
+*   CAPRI   CAPRL   CAPRT   MNTRI  MNTRL   MNTRT
+*   CAPTI   CAPTL   CAPTT   MNTTI  MNTTL   MNTTT
+*   MILRI   MILRL   MILRT   MILUI   MILUF   MILUL  MILUT
+*   UMILgt4    UMILle4   RMILgt4  RMILle4
+*   RPASSVEH   RTRUSING   RTRUCOM  UPASSVEH  UTRUSING   UTRUCOMB
+*   ALASKA  NEWYORK     CALIFORN   SOUTHEAS   MIDWEST  NORTHEAS
+*   VMTRI   VMTRL   VMTRT  VMTUI   VMTUF   VMTUL   VMTUT
+*   CSTADMH   CLADMRD   CFEDROAD   CTAL
+*   MSTADMH   MLADMRD   MREDROAD   MTAL
+*   ADM_MISC    LAW_SAFE   INTEREST   BONDRET
+*   TDISB   MILRISQ.
+
+*save outfile='C:\HIGHWAYS\HIGHWAY3.X'.
+
+get file='C:\HIGHWAYS\HIGHWAY3.X'.
+The SPSS/PC+ system file is read from
+    file C:\HIGHWAYS\HIGHWAY3.X                                         
+The file was created on  9/19/95 at 14:58:45
+and is titled                        SPSS/PC+                                 
+The SPSS/PC+ system file contains
+     51 cases, each consisting of 
+     76 variables (including system variables).
+     76 variables will be used in this session.
+-------------------------------------------------------------------------------
+Page   3                          SPSS/PC+                              9/19/95
+-------------------------------------------------------------------------------
+Page   4                          SPSS/PC+                              9/19/95
+
+This procedure was completed at 16:30:09
+
+select if (YEAR > 0).
+
+* Interest Rate, assume 7%
+
+compute IRATE=0.07.
+
+compute TOTCAP=CAPRI+CAPRL+CAPUI+CAPUL.
+
+compute MILRLSQ = MILRL * MILRL.
+
+* HIGHINF = Inflator 1988 to 1993 (assume 20%)
+
+compute HIGHINF = 1.2 * HIGHWAY.
+
+compute CAPNEW = 1000*HIGHINF*IRATE.
+
+compute TOTEXP = CAPNEW+MNTRI+MNTRL+MNTUI+MNTUL+ADM_MISC+LAW_SAFE.
+
+compute LNTOTEXP=LN(TOTEXP).
+
+compute LNVMTRI=LN(VMTRI).
+
+compute LNVMTRL=LN(VMTRL).
+
+compute LNVMTUI=LN(VMTUI+VMTUF).
+
+compute LNVMTUL=LN(VMTUL).
+
+compute LNMILRI=LN(MILRI).
+
+compute LNMILRL=LN(MILRL).
+
+compute LNMILUI=LN(MILUI+MILUF).
+
+compute LNMILUL=LN(MILUL).
+
+compute VMTTOT=VMTRI+VMTRL+VMTUI+VMTUL+VMTUF.
+
+compute MILETOT=MILRI+MILRL+MILUI+MILUL+MILUF.
+
+compute VCRI = (VMTRI/MILRI).
+
+compute VCRL = (VMTRL/MILRL).
+
+compute VCUI = ((VMTUI+VMTUF)/(MILUI+MILUF)).
+
+compute VCUL = (VMTUL/MILUL).
+
+compute LNVCRI = LN(VMTRI/MILRI).
+
+compute LNVCRL = LN(VMTRL/MILRL).
+
+compute LNVCUI = LN((VMTUI+VMTUF)/(MILUI+MILUF)).
+
+compute LNVCUL = LN(VMTUL/MILUL).
+
+compute LNRTRUC=LN((RTRUCOM/100)*(VMTRI+VMTRL)).
+
+compute LNUTRUC=LN((UTRUCOMB/100)*(VMTUI+VMTUF+VMTUL)).
+
+compute RTRUC=((RTRUCOM/100)*(VMTRI+VMTRL)).
+
+compute UTRUC=((UTRUCOMB/100)*(VMTUI+VMTUF+VMTUL)).
+
+compute lnrmgt4=LN(RMILGT4).
+
+compute lnrmle4=LN(RMILLE4).
+
+compute lnumgt4=LN(UMILGT4).
+
+compute lnumle4=LN(UMILLE4).
+
+regression variables= TOTEXP
+The raw data or transformation pass is proceeding  
+     48 cases are written to the compressed active file.
+   rmilgt4 rmille4 MILRL umilgt4 umille4 MILUL
+   vcri vcrl vcui vcul
+   utruc rtruc
+   NEWYORK CALIFORN SOUTHEAS MIDWEST NORTHEAS
+  /dependent=TOTEXP
+  /method=enter.
+-------------------------------------------------------------------------------
+Page   8                          SPSS/PC+                              9/19/95
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+
+Listwise Deletion of Missing Data
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+Block Number  1.  Method:  Enter
+-------------------------------------------------------------------------------
+Page   9                          SPSS/PC+                              9/19/95
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+
+Variable(s) Entered on Step Number
+   1..    NORTHEAS
+   2..    UTRUC
+   3..    MIDWEST
+   4..    CALIFORN
+   5..    NEWYORK
+   6..    VCRI
+   7..    SOUTHEAS
+   8..    MILRL
+   9..    VCUI
+  10..    UMILLE4
+  11..    RMILGT4
+  12..    RMILLE4
+  13..    RTRUC
+  14..    VCUL
+  15..    UMILGT4
+  16..    VCRL
+  17..    MILUL
+-------------------------------------------------------------------------------
+Page  10                          SPSS/PC+                              9/19/95
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+
+Multiple R           .98604
+R Square             .97227
+Adjusted R Square    .95263
+Standard Error 207255.67442
+
+Analysis of Variance
+                    DF      Sum of Squares      Mean Square
+Regression          17 36145216814440.0720 2126189224378.83
+Residual            24 1030917949906.90520 42954914579.4544
+
+F =      49.49816       Signif F =  .0000
+-------------------------------------------------------------------------------
+Page  11                          SPSS/PC+                              9/19/95
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+
+------------------ Variables in the Equation ------------------
+
+Variable              B        SE B       Beta         T  Sig T
+
+NORTHEAS   252783.12253 204445.9531    .105506     1.236  .2283
+MIDWEST    182469.62102 125532.5431    .082605     1.454  .1590
+CALIFORN   1338443.8395 564628.6127    .216888     2.370  .0261
+NEWYORK    1262250.0241 304960.8740    .204541     4.139  .0004
+SOUTHEAS   129274.99808 143643.1949    .063523      .900  .3771
+UMILGT4      153.547714  817.488671    .028285      .188  .8526
+UMILLE4     3521.054517  806.660542    .430527     4.365  .0002
+MILUL         -3.404264   12.165108   -.180424     -.280  .7820
+RMILGT4     3284.466107 1615.587590    .184360     2.033  .0533
+RMILLE4      696.963913  300.907476    .275569     2.316  .0294
+MILRL          8.614922   13.831380    .350481      .623  .5393
+UTRUC         41.595371   75.162375    .084145      .553  .5851
+RTRUC        -54.228030   43.547766   -.148744    -1.245  .2251
+VCUI       17518.688219 13002.00281    .126102     1.347  .1904
+VCUL       202827.67150 654017.7431    .046709      .310  .7591
+VCRI       -22867.55365 44113.53641   -.084370     -.518  .6089
+VCRL       1252680.6411 929361.8973    .234205     1.348  .1903
+(Constant) -838725.1620 324879.9760               -2.582  .0164
+
+
+End Block Number   1   All requested variables entered.
+-------------------------------------------------------------------------------
+Page  13                          SPSS/PC+                              9/19/95
+
+This procedure was completed at 16:30:36
+
+*   LNVMTRI LNVMTRL LNVMTUI LNVMTUL
+
+-------------------------------------------------------------------------------
+Page  14                          SPSS/PC+                              9/19/95
+
+FINISH.
+
+End of Include file.

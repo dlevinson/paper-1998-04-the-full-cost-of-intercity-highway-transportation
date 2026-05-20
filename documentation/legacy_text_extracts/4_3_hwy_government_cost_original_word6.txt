@@ -1,0 +1,458 @@
+4.3 GOVERNMENT COSTS
+4.3.1 Overview
+An econometric approach is taken to estimate the costs, usually borne by state and local governments, of building,  maintaining, operating, and administering streets and highways. While many previous studies have provided unitary average or marginal costs for the highway system (FHWA 1982),  our model, which estimates total expenditures by states (including federal moneys spent in the state as well as the moneys spent by cities and counties) on highway facilities as a function of usage by vehicle class and price of inputs such as labor, material, and capital, provides cost functions.  These functions show not only the average and marginal cost at today’s levels of usage and input, but allow us to estimate how expenditures would change with changes in the mix of roadway users (cars vs. trucks) as well as the total amount of usage, and the price of inputs.  We begin by discussing the theory of how transportation product is measured and estimated, then apply the theory to the available data, and estimate cost functions.  These cost functions enable the computation of economies of scale, density, utilization, and scope.  We then compare our cost functions with other studies to give a frame of reference.
+4.3.2 Theory of Transportation Product 
+Transportation product of a given commodity between an origin and destination can be loosely defined as a flow of goods between those two points at varying levels of service (Bailey and Friedlaender, 1983). Transportation product for a highway network can be defined as the vector of flows of passengers and freight between the origins and destinations served by the network in each of the OD markets that it serves :
+(4.3.1) Y = {Ymnc}
+
+where: 
+m = origin
+n = destination
+c = class of service (passenger vehicle, single unit truck, combination truck)
+Y = flows of passengers (or commodities)
+
+Other dimensions can be incorporated to this measure such as the period (time of day or week or season), the commodity type in freight transport, or the level of service (such as the speed of travel).  The incorporation of these measures would more accurately describe the situation but would also complicate the specification.  For exposition, we will not include them.
+The question of aggregation drives the actual specification of the vector of flows.  For instance, each size of car (such as subcompact, compact, intermediate, large, wagon, or utility vehicle) can be specified as a separate commodity or can be aggregated into a vehicle class (cars).  The vector of flows definition can be used to model either side of the boundary between different products and product differentiation depending upon the aggregation scheme used.
+Provided that the definition of transportation product is (correctly) characterized as a vector of flows, the measurement of costs using an aggregate unit times distance (UTD) measure, such as passenger kilometers or passenger miles, can lead to incorrect inferences concerning the technical properties of an industry.  This section provides insight into the measurement of technical properties that results from the specification of transportation product as a single aggregate output and from a disaggregated vector of flows definition.
+4.3.2.1 Aggregated Unit Output
+
+Most of the transport costing literature has focused on the specification of transportation output using a unit times distance measure instead of a multi-product output definition.  This section highlights the different measurements of technical properties that have resulted from the aggregate assumption for the different modes.
+The measure of average costs (AC) is well defined for the single output case, defined simply as the total cost ( C(Y) ) divided by the total output (Y).  This represents the per unit cost of producing an undifferentiated unit of “aggregate” output:
+(4.3.2) AC = C(Y)/Y
+
+Marginal cost can also be easily derived from any twice differential cost function C(Y) as defined by neoclassical microeconomics. :
+(4.3.3) MC = ∂C(Y)/∂Y = MC(Y)
+The technological property of economies of scale has been defined as “s” in the following relationship characterizing level of output to costs :
+(4.3.4) C(w, lsY) = lsC(w,Y)
+
+where:
+Y = output
+w = the vector of factor prices
+l = the level of production (output) for the firm.
+
+In the above formula, we have :
+constant returns to scale for s = 1
+increasing returns to scale for s > 1
+decreasing returns to scale for s < 1
+
+Economies of scale have been examined extensively in the literature for many passenger modes with differing results.  The incorporation of a measure seeking to capture the effects of the size of the network on the cost structure has led to improved inferences.  The measurement of technological properties of the industry structure has been done primarily without consideration of the true multi-product output structure that exists.
+More dramatically, economies of scope cannot be compared using a cost function calculated from a completely aggregate output definition since no consideration of the network of flows has been provided.  Economies of density have been captured by incorporating a proxy measure for network size in the cost functions for the case of commercial airlines (Caves, Christensen and Tretheway, 1984).  Certain effects of economies of scope may have been attributed to economies of density in that formulation using the UTD aggregate output definition. 
+4.3.2.2 Multi-Product Output
+
+Viewing transportation product as a multi-product output (with the multiple products being the vectors of flows produced) provides a more correctly interpretable view of the actual costs and technological properties of any transportation firm.  A multi-product transportation cost function can be written as C(Y) 
+where:
+Y= {Yi}
+i represents each origin to destination flow at a given level of service.  
+
+The marginal cost of production for each product (or flow) i can be calculated from any twice differentiable transport cost function :
+(4.3.5) MCi = ∂C(Y)/∂Yi = MCi(Y)
+
+While the average cost of production is well defined for the single output case as illustrated above, under the definition of a vector of flows the measure of average costs becomes ambiguous :
+(4.3.6) ACi = C(Y)/Y
+
+does not uniquely exist.  Unless the outputs in the vector Y are assumed to be equivalent (analogous to the UTD measure) or systematically related, the above measure of average cost has no closed form.  Some type of index must be used in place of the vector Y in the calculation of an “average” cost.  In this way, the calculation of average cost requires a weighting of the outputs.
+The incremental cost can provide more direct insight into the problem of marginal costs of production for a transportation firm.  The incremental cost of introducing the additional output (vector of flows) Yn is equal to :
+(4.3.7) ICn = C(Y) - C(Ym-n)
+
+where:
+Y = {Y1,....,Ym}
+Yn = {Y1,...,Yn}
+Ym-n = {Yn+1, ... , Ym}
+
+The loose interpretation of this concept is the amount of money that must be spent in order to introduce the remaining vector of products (or flows).  Incremental cost can be thought of as the marginal cost of introducing an additional vector of flows Yn to an existing network.
+In a hierarchical highway network, with smaller roads (e.g. collectors and distributors) feeding larger roads (arterials) feeding still larger roads (freeways), the size of the vector of flows is lumpy.   The addition of a link from a previously unserved place feeding into a freeway will automatically create a new set of network connections, both from that place to everywhere else, and from everywhere else to that place, not just from that place to the freeway (which is only an interim destination).  Thus, the introduction of an additional link to an existing network provides a capacitated vector of flows that includes the pair of places at the two ends of the link, but also a vector of connection opportunities.  The addition of several new OD pairs has resulted from the addition of a single link.
+Having introduced the concept of incremental cost, a definition of average incremental cost can be generated as follows :
+(4.3.8 )AICi = ICi/Yi
+
+The average incremental cost of introducing product i to the market provides an unambiguous measure of the average cost in the multi-product output context.  This definition has a clearer interpretation when examining the technological properties of a transportation industry.
+Measures of cost complementarity take on importance in the economics of network operations, particularly hierarchical transportation systems.  The lumpiness of network size increases from adding links, or lanes on a link, to a hierarchical network are a classic case of cost complementarity.  Theoreticallly, cost complementarity is present between any two products related using a total firm output cost function that is twice differentiable if :
+(4.3.9) ∂2C/∂Yi∂Yj < 0
+	or 
+(4.3.10) ∂MCi/∂Yj < 0
+	or 
+(4.3.11) ∂MCj/∂Yi < 0
+
+Ideally, the specific technical properties of the cost function specified should be able to provide for cost complementarity or its absence.
+4.3.2.3 Multi-Product Ouput: Economies of Scope
+Economies of scope is similar to a measure of average cost divided by marginal cost.  The technical property of economies of scope can be expressed as follows in the multi-product output context:
+(4.3.12) SCn(Y) = [C(Yn) + C(Ym-n) - C(Y)]/C(Y)
+
+The quantity C(Yn) + C(Ym-n) represents the total cost of producing both vectors of flows separately and C(Y) represents the cost of producing both vectors of flows simultaneously.
+If SCn > 0 then there are economies of scope
+If SCn < 0 then there are diseconomies of scope
+If SCn = 0 then there are no economies of scope
+Simple examples of the back-haul and introducing a link to an existing hierarchical network are instructive.  For a large hierarchical network, serving the entire network from a single added point can be done for the cost of a single link (plus any costs for expanding the rest of the network if it is congested, or the congestion costs which result).  A non-hierarchical, point-point system must add one link for each additional market.  When considering the back-haul, since the transportation operator (the trucker or the passenger car driver) must return his vehicle to the origin point anyway, there is very little cost associated with operating bi-directional service (two-way links) in a market.  However if flows are peaked, for instance highways in rush hour, it may make sense to allocate the network asymmetrically over the course of the day, more lanes in the (inbound) peak direction during morning, more in the (outbound) peak direction in the afternoon.
+In situation with no economies of scope :
+(4.3.12) C(Y) = C(Ym-n) + C(Yn)
+
+which implies that the cost of producing both networks of flows separately is equivalent to producing them together.
+4.3.2.4 Multi-Product Output: Economies of Scale
+
+The technical property of economies of scale can be calculated in the multi-product output context.  The technical property of economies of scale in the multi-product output case is:
+(4.3.13) Sn = ICn /Â(iŒN)(Yi*∂c(Y)/∂Yi)
+
+where we have:
+constant returns to scale for Sn = 1
+increasing returns to scale for Sn > 1
+decreasing returns to scale for Sn < 1
+
+The technology associated with economies of scale is clearly different from that of economies of scope.  With economies of scale, the cost of producing a more transportation output within the same network is lower for larger levels of output.  The economic interpretation of economies of scale is :
+(4.3.14) S = cost/(amount produced)*(marginal cost) = cost/revenue
+
+We see from the above formula that in the case of constant returns to scale, cost is equal to revenue.
+Clearly, the technological properties that are attributed to an industry are directly related to the assumptions concerning transportation product.  When considering a series of services across a network, it is important to consider the different costs associated with offering different types of services over a single aggregate measure.  The resulting technical properties depend heavily upon the output specification.
+4.3.3 Model
+We want to estimate a model predicting total expenditures as a function of price inputs (interest rates, wage rates, and material costs),  outputs (miles traveled by passenger vehicle, single unit truck, and combination truck ), and network variables (the length of the network, the average width of links).  We also want to distinguish between long run and short run total expenditures, in the long run everything varies, in the short run, capital costs are assumed fixed.
+The hypothesis of the expenditure model is that total expenditures increase with outputs, with prices, and with the size of the network, so all signs should be positive.  However, the amount of increase with output depends on the nature of the output.  
+Outputs:  Three classes of output (Y) are defined: passenger cars (Ya), single unit trucks (Ys), and combination trucks (Yc).  Because of their relative damage to the roadway, costs associated with passenger cars are expected to be less than those associated with single unit trucks, which is less still than those associated with combination trucks.   However, this may not be the case if there are economies of scope associated with roadways.  For instance, suppose a network is designed for peak rush hour flows, and that these flows are dominated by passenger cars.  In the off-hours, capacity is underutilized, if it is those hours that trucks use the roadway, then the government expenditure on transportation to serve those trucks may in fact be less then that for passenger vehicles.  At a minimum, because these two effects (efficient capacity utilization vs. greater damage) are offsetting, the relative additional costs to serve trucks would not be as great as that indicated by an engineering analysis based solely on damage which does not consider scope economies. 
+Inputs:  Several price measures are included in the model.  The first, to measure the price of capital (Pk), including the entire built stock of the highway network, is measured by taking the interest rate, which reflects the cost of money.  States with lower bond ratings or higher interest rates must pay more to borrow, and have a higher opportunity cost for fixed investment.  Second, the price of labor (Pl) is measured by taking the average wage rate of state employees (normalized to the national average).  Third, the principal materials used in constructing and maintaining roadways are for surfacing, we include the price of bituminous concrete to represent the price of materials (Pm). 
+Network: We have included  two variables to describe the network to try to measure economies of density.  The first is the length (Nl)  in linear miles of roadway, the second is the width (Nw)  the average number of lanes of interstate highways.  When providing capacity, there is a trade-off between building more skinny facilities or fewer wider facilities.  We hope to capture this trade-off by including both network variables. 
+The model is estimated two ways, first using ordinary least squares (OLS) and then using feasible generalized least squares (weighted least squares (WLS)). WLS, where the reciprocal of variance is used as a weight, corrects for the clear heteroskedasticity in the data, wherein the size of the residual is correlated with the size of the dependent variables.  Two functional forms: a linear model  and a Cobb-Douglas (using the log of both dependent and independent variables) model are estimated.  The results are given below in section 4.3.5.  The model formulations are given in equations 4.3.16 - 4.3.22 below, while the variables are defined in Table 4.3.1 and discussed in more depth in section 4.3.4:
+
+Long Run Total Expenditures
+(4.3.16) LRTE = Ck + Cl + Cm = f (Ya, Ys, Yc, Pk, Pl, Pm, L, W) + e
+
+linear:
+(4.3.17 )LRTE = ß0 + ß1Ya+ ß2Ys + ß3 Yc + ß4 Pk +ß5 Pl+ ß6 Pm+ß7 L+ß8W + e
+
+Cobb-Douglas (log-linear):
+(4.3.18) LRTE = ß0 Yaß1 Ysß2 Ycß3 Pkß4 Plß5 Pmß6 Lß7  Wß8+ e
+
+Short Run Total Expenditures
+(4.3.19) SRTE =          Cl + Cm = f (Ya, Ys, Yc, Pk, Pl, Pm, L, W) + e
+
+linear:
+(4.3.20) SRTE = ß0 + ß1Ya+ ß2Ys + ß3 Yc + ß4 Pk +ß5 Pl+ ß6 Pm+ß7 L+ß8W+ e
+
+Cobb-Douglas (log-linear):
+(4.3.21) SRTE = ß0 Yaß1 Ysß2 Ycß3 Pkß4 Plß5 Pmß6 Lß7  Wß8+ e
+
+Table 4.3.1 Definitions of Variables in Cost Function Estimation
+VariableDefinitionLRTELong Run Total Expenditure = Ck + Cl + CmSRTEShort Run Total Expenditure = Cl + CmCkExpenditure -Capital ($ thousands)  
+Ck= SC1988 * 1000 * I * Pk, 
+            I = 1.20 = price inflator 1988 - 1993, 
+            Pk = Price of capitalClExpenditure - Labor ($ thousands) = Adminstration + Law & SafetyCmExpenditure - Maintenance ($ thousands) = facilities + structures + traffic controlYaYsOutput - single unit truck =  vehicle miles traveled per year (millions)YcOutput - combination truck = vehicle miles traveled per year (millions)PkPrice - capital = interest rate based on Moody’s Bond Rating of statePlPrice - labor = average wage of state government employee ($) divided by national averagePmPrice - materials = price index of materials = price of bituminous concrete ($/cu yd) divided by national averageNlNetwork Size - linear miles of roadway NwNetwork Size - average width of roadway (lanes) eresidual
+4.3.3 Data Sources and Description
+The data used in the model of highway infrastructure costs come from several sources.  Total expenditures data are developed from two sets of information, data compiled by the Federal Highway Administration on maintenance, operating, and administrative costs (FHWA 1993 ) and capital stock data collected by Gillen et al (1994).  The capital stock series was inflated from 1988 to 1993 levels (a 20% inflation was taken), and then was discounted to reflect an annualized cost (the annual cost was assumed to equal the total cost multiplied by the price of capital or interest rate - a state with a higher interest rate will has a higher opportunity cost for investing money in fixed assets).  The annualized capital cost was added to annual expenditures on maintenance, operations, and administration to create an estimate of long run total expenditures (LRTE). The short run total expenditures (SRTE) assumes that the stock of capital is fixed in the short term (though it varies in the long term), and thus looks at the allocation of costs for maintenance and labor.
+
+Table 4.3.2 Expenditures Data ($)
+SC Stock Capital 1988 millionsCapital Expend. 1993 thousdCm Maint. Expend. 1993 thousdCl1 Admin. Expend. 1993 thousdCl2   Law Safe Expend. 1993 thousdBond Retire. 1993 thousdAverage10457.725882051375051430641389857099489979
+Three independent variables of the model represent outputs from the transportation system, the 1993 vehicle miles traveled of cars (Ya), single unit trucks (Ys), and combination trucks (Yc), from  the FHWA Highway Statistics Report (1993). The data has been analyzed by Hartgen and Spears (1994), who compared the economic performance of states.  However their study suffered from a number of flaws, many of which are due to poor data.  The principal problem is that the data is reported as linear miles of roadway, and no correction is made for the number of lanes per linear model.  While the number of miles with less than or equal to 4 lanes and more than 4 lanes is reported, there is no indication of the number of miles of 2 lane, 3 lane, 4 lane etc. roads.  Methods to deal with this censored data should be applied, and in the future better data should be collected.
+Table 4.3.3 Outputs Data
+Ya Auto VMT (millions)Ys Single Truck VMT (Millions)Yc Comb. Truck VMT (millions)%URBAN%FREEWAYAverage32738735248900.530.27Several measures were used to obtain the price of inputs into transportation construction and maintenance costs.  The price of labor (Pl) was measured from the average wage of state government employees (in dollars per year) for 1993 (BLS, 1995), normalized by dividing by the national average.  The 1994 data are also shown in table 4.2.
+The price of capital (Pk), was defined as interest rate paid by that state for borrowed money.  Table 4.3.2 shows typical interest rate yields for AAA rated stocks based on time until maturity, we couple this with Moody’s ratings for each state and typical additions to interest rates paid for lower rated bonds (shown in Table 4.3.3) garnered from recent offerings.
+TABLE 4.3.4: Interest Rates Yields
+MATURITY    12/13/95  6/13/95TWO YEAR      3.92     4.29  FIVE YEAR     4.32SEVEN YEAR    4.52     4.82   TEN YEAR      4.82     5.12    FIFTEEN YEAR       5.60    TWENTY YEAR   5.50     5.80   THIRTY YEAR   5.62    5.92   
+Triple-A Rated, Tax-Exempt Insured Revenue Bonds.  
+notes: This information provided by the Public Securities Association (PSA) and Bloomberg L.P. to be used solely as a bench- mark for particular categories of municipal bonds. The yields for maturities beyond ten years represent a callable bond. The yields are a composite of round lot ($250,000 or above) prices based on bonds which have coupons that reflect current market conditions.
+Table 4.3.5 Assumed Interest Rates by Moody’s Bond Rating
+Bond Rating Interest RateAAA4.75AA14.95AA5.15A15.35A5.55BBA15.75BBB5.95
+The third main input is materials.  The principal material used in highway construction is concrete for pavement.  We computed indexes of construction materials prices by taking the price of an input (FHWA 1994b), and dividing by the national average of the price of that input.   The indexes, reflecting relative prices, with a mean at 1, can then be added to create a composite index for construction materials.   For instance, the price of bituminous concrete in a state, and divided by the national average of the unit price of bituminous concrete, provides an index representing the relative price of bituminous concrete.  The materials for which data was available (bituminous concrete (price per ton), common excavation (price per cubic yard), reinforcing steel (price per pound), structural steel (price per pound), and structural concrete (price per cubic yard)) were included in the database.  Boske (1988) discusses the data and the use of indexes with this data, though only bituminous concrete was used in the final regressions.
+Table 4.3.6: Price Data ($)
+Pl Gov
+Salary 
+(1993)Pk Bond 
+Rating 
+(1994)Pm Bit.
+Concrete 
+(1993)Excav (1993)Reinf.
+ Steel 
+(1993)Struct 
+Steel
+(1993)Struct
+Concrete
+(1993)Average27168AA18.812.50.4670.861261.89Notes: Source: FHWA 1994b, BLS 1995, Units: Bituminous Concrete $/ton, Excavation $/cu yd, Reinforcing Steel  $/lb, Structural Steel $/lb, Structural Concrete $/ton
+A number of variables, given in FHWA (1993) describe the network.  Total linear miles (Nl) is a key variable used to enable use to distinguish between economies of scale and economies of density in the analysis.  Also the width of interstate roadways (Nw) was computed using information on miles of interstate greater than 4 lanes and less than four lanes.  While wider roads are more expensive to maintain than narrower ones, it may be more efficient to build fewer and wider roads than more and skinnier ones.  Potentially there is some difference in the cost based on whether the road is urban or rural, so that data was included in the database.
+Table: 4.3.7 Network Size Data
+L - TotalMilesL - %FreewayL - %UrbanW - %UrbFwy > 4 lanesW - %RurFwy     > 4 lanesAverage765630.0170.240.390.07
+While summaries of the data were given in Tables 4.3.4 - 4.3.7, the data for each state are given in the appendix (A.4.3.4).
+
+4.3.5 Results
+Four models (linear and log-linear forms for long run and short run total expenditures) were estimated using ordinary least squares regression, and again with weighted least squares regression to correct for heteroskedasticity.  The coefficients from the log-linear (Cobb-Douglas) weighted least squares are used for further analysis, the other regression results are given in the appendix (A.4.3.5) for information purposes.
+Correlations and Collinearity:
+	
+Correlations:AUTOSINGCOMBMILE.POP90WID.IRATEPLPmAUTO1.0000.8941**.7547**.6394**.9800**.9398**-.0665.4596*.0428SING.8941**1.0000.8019**.7187**.9081**.8980**-.0619.4143*.1242COMB.7547**.8019**1.0000.7563**.7715**.6188**-.0921.1811.0138MILES.6394**.7187**.7563**1.0000.6361**.5471**-.0067-.0446-.0179POP90.9800**.9081**.7715**.6361**1.0000.9198**-.0083.5102**.0768WIDTH.9398**.8980**.6188**.5471**.9198**1.0000-.1056.5459**.1152IRATE-.0665-.0619-.0921-.0067-.00831.0000-.1918-.0130PL.4596*.4143*.1811-.0446.5102**.5459**-.19181.0000.0953Pm.0428.1242.0138-.0179.0768.1152-.0130.09531.0000
+N of cases:	41		 1-tailed Signif:  * - .01  ** - .001
+
+The table above, showing the correlations between the proposed independent variables required us to scale back the regressions, deleting the network variables to avoid multicollinearity problems which prevented an economic interpretation of the data.
+LRTE = f (Ya, Ys, Yc, Pk, Pl, Pm)
+SRTE = f (Ya, Ys, Yc, Pk, Pl, Pm)
+
+4.3.5.1 Long Run Total Expenditures, Log-Linear Model, Weighted Least Squares
+
+Largely, the hypotheses were borne out,  the signs were in the expected direction.  For feasible generalized (weighted) least squares, the t-statistics cannot be direcly interpreted to indicate statistical significance, though the t-statistics for the corresponding  OLS regression were generally significant, and are shown in the last two columns for comparison purposes.  
+
+Three variables are of concern: Nw, reflecting the width of the roadway, and Pm, the price of  materials were not significant variables.  More importantly, there is wide variance around the estimate of the coefficient for Yc, combination trucks.   Other regressions, with different sets of independent variables have shown coefficients on Yc about 50% larger, indicating that the true value is probably higher and collinearity, which is obviously high in this data, may be causing problems about certainty of parameter estimates.
+
+Table 4.3.8 LRTE: WLS and OLS Model Statistics
+ResultWLS ValueOLS ValueMultiple-R.99896R-Square.99792.95311Adjusted-R-Square.99740.94138Standard-Error1.06748.207651918.2623581.29699Signif-F.0000.0000
+Table 4.3.9 LRTE: WLS Analysis of Variance
+Sum-of-SquaresMean-SquareRegression817487.199532185.89994Residual3236.464671.13952
+Table 4.3.10 LRTE: WLS and OLS Model Coefficients
+VariableWLS  BSE-BBetaWLS TWLS Sig-TOLS BOLS TOLS Sig-TConstant11.185.97511.463.00010.915.261.000LNNL.183.0401.1484.574.000.1821.699.099LNNW-.643.546-.047-1.178.247-.389-.382.705LNPK1.92.169.18511.348.0001.913.869.001LNPL1.18.190.1276.170.0001.122.443.020LNPM.044.023.0181.898.066.017.226.823LNYA.450.0396.60311.363.000.4324.108.000LNYC.103.0407.1112.531.016.1021.204.237LNYS.149.0511.1312.927.006.1762.088.044
+
+This can be expressed as an equation below:
+ 
+
+Figure 4.3.1: Long Run Total Expenditure: Model vs. Observed
+
+
+
+
+The short run total expenditure (SRTE) model was less successful than that for long run total expenditures.  More variables were insignificant in the OLS, and the results for Yc, combination trucks even in the weighted least squares are not acceptable for policy conclusions with this model formulation.  < MORE WORK NEEDS TO BE DONE HERE >
+
+Table 4.3.11 SRTE: WLS and OLS Model Statistics
+ResultWLS ValueOLS ValueMultiple-R.99971.95162R-Square.99942.90559Adjusted-R-Square.99928.88198Standard-Error1.00901F6909.4169138.36627Signif-F.0000
+DFMean-SquareRegression856275.449217034.43115Residual3232.578991.01809
+Table 4.3.13 SRTE: WLS and OLS Model Coefficients
+VariableWLS BSE-BBetaWLS TWLS Sig-TOLS BOLS TOLS Sig-TConstant4.304.8005.378.00001.703.0983LNNL.125.0512.454.0197.036.206.8384LNNW-.326.402-.037-.812.4231-.997-.597.5547LNPK.473.131.0503.611.0010.618.764.4507LNPL.605.080.1267.499.0000.595.791.4347LNPM-.027.027-.991.3293-.043-.348.7300LNYA.685.032.64021.368.0000.7254.213.0002LNYC.002.012.002.210.8348-.006-.048.9623LNYS.193.011.25616.476.0000.2121.537.1341
+(4.3.23) SRTE = 73.99 Nl 0.126 Nw -0.326 Pk 0.473 Pl  0.605 Pm -0.0271 Ya 0.685 Yc 0.00271 Ys 0.193
+
+Figure 4.3.2: Short Run Total Expenditure: Model vs. Observed
+
+4.3.6 Average and Marginal Costs 
+In the previous section we estimated models to explain total expenditures as a function of output (vehicle miles traveled on the system) and inputs (prices of various system components).  The average and marginal costs can be computed from the total expenditure function. The marginal cost is the first derivative of the total expenditure function.   The linear model directly gives the average cost per unit as the coefficient before the variables.  The log-linear model is somewhat more complicated, and will be discussed below.  It should be noted that  in the simple linear model, the average cost is the same as the marginal cost.
+4.3.6.1 Long Run Average and Marginal Costs
+Recalling the long run total expenditure function (eq 4.3.22) and the marginal cost calculation (eq 4.3.5), we can compute long fun marginal cost functions for the three classes of vehicles.  These are solved for average values in table 4.3.14 (the values for each state are given in appendix (A.4.3.6).
+
+(4.3.22) LRTE(Y) = 71,682 Nl 0.183 Nw -0.643 Pk 1.92 Pl1.176 Pm 0.0445 Ya 0.450 Yc 0.103 Ys 0.149
+(4.3.5) MCi = ∂C(Y)/∂Yi = ∂LRTE(Y) /∂Yi =  MCi(Y)
+
+(4.3.24a) LRMCa = 71,682 Nl 0.183 Nw -0.643Pk 1.92Pl1.176Pm 0.0445(0.450)Ya -0.550 Yc0.103Ys0.149
+(4.3.24s) LRMCs = 71,682 Nl 0.183 Nw -0.643Pk 1.92Pl1.176Pm 0.0445 Ya 0.450Yc 0.103(0.149)Ys-0.851
+(4.3.24c) LRMCc = 71,682 Nl 0.183 Nw -0.643Pk 1.92 Pl1.176Pm 0.0445Ya 0.450(0.103)Yc-0.897Ys 0.149
+While the long run marginal cost for trucks is larger than autos, as expected, the cost of single unit trucks is (counter-intuitively) larger than for combination trucks. 
+< More work is required here too >
+Table 4.3.14 Long Run Marginal Costs by Vehicle Class
+StateLRMC-Auto ($/mi)LRMC-CombLRMC-SingLRMC-TruckAverage0.01340.01520.06610.0227
+The average cost function is well defined for the single output but, under the definition of a vector of flows the measure of average costs becomes ambiguous:
+(4.3.6) ACi = C(Y)/Y
+
+The average cost does not uniquely exist.  Unless the outputs in the vector Y are assumed to be equivalent or systematically related, the above measure of average cost has no closed form.  Some type of index must be used in place of the vector Y in the calculation of an “average” cost.  In this way, the calculation of average cost requires a weighting of the outputs.  The incremental cost of introducing the additional output (vector of flows) Yn is equal to :
+(4.3.7) ICn = C(Y) - C(Ym-n)
+
+Y = {Y1,....,Ym}
+Yn = {Y1,...,Yn}
+Ym-n = {Yn+1, ... , Ym}
+
+To estimate the incremental cost, we can thus evaluate the long run total expenditure function at two values, for instance to estimate LRICa, the long run incremental cost per unit of automobile travel (1000 vehicle miles traveled), we can evaluate at the means for all values except Ya, which we evaluate at the mean  ( E(Ya) ) and at 1
+
+
+(4.3.25a) LRICa = (E(Ya) 0.450  - 1 0.450) (Za) / E(Ya) = $0.031 /mi
+
+Za = 71,682 Nl 0.183 Nw -0.643 Pk 1.92 Pl1.176 Pm 0.0445 Yc 0.103 Ys 0.149 evaluated at the mean
+    = 9745
+(4.3.25s) LRICs = (E(Ys) 0.149 - 1 0.149) (Zs) / E(Ys) = $0.0458 /mi
+
+where: 
+Zs = 71,682 Nl 0.183 Nw -0.643 Pk 1.92 Pl1.176 Pm 0.0445 Yc 0.103 Ya 0.450  evaluated at the mean
+    = 12,173
+
+(4.3.25c) LRICc = (E(Yc) 0.109  - 1 0.109) (Zc) / E(Yc) = $0.00566 /mi
+
+where: 
+Zc = 71,682 Nl 0.183 Nw -0.643 Pk 1.92 Pl1.176 Pm 0.0445 Ya 0.450 Ys 0.149 evaluated at the mean
+    = 18,170
+
+The results  and similar though not identical data setTable 4.3.15 Long Run Marginal and Average Incremental Costs
+Vehicle TypeMC $/VMTMC
+$/VKTAIC $/VMTA$/VKTMC Ivaldi-McCullough
+$/VMTMC Ivaldi-McCullough
+$/VKTYa0.0134 =B2*0.6 0.0080.031 =d2*0.6 0.0190.010 
+(0.011 - 0.017)0.006 
+(0.007 - 0.010)Ys =B3*0.6 0.03970.045 =d3*0.6 0.02750.043
+(0.007 - 0.097)0.026 
+(0.004 - 0.058)Yc0.0152 =B4*0.6 0.00910.0056 =d4*0.6 0.00340.086 
+(0.08 - 0.26)0.051 
+(0.048 - 0.156) () range of state level highway agency marginal costs (Ivaldi-McCullough 1995, p.43)
+
+4.3.6.2 Short Run Average and Marginal Costs
+Similar calculations can be performed for the short run total expenditures model.
+
+(4.3.23) SRTE = 73.99 Nl 0.126 Nw -0.326 Pk 0.473 Pl0.605 Pm -0.0271 Ya 0.685 Yc0.00271 Ys 0.193
+(4.3.26a) SRMCa = 73.99 Nl 0.126 Nw -0.326 Pk 0.473 Pl0.605 Pm -0.0271(0.685)Ya-0.315 Yc0.00271Ys0.193
+(4.3.26s) SRMCs = 73.99 Nl 0.126 Nw -0.326 Pk 0.473 Pl0.605 Pm -0.0271Ya0.685Yc0.00271 (0.193)Ys-0.807
+(4.3.26c) SRMCc = 73.99 Nl 0.126 Nw -0.326 Pk 0.473 Pl0.605Pm -0.0271Ya0.685 (0.00271 )Yc -997Ys0.193
+Table 4.3.16 Short Run Marginal Costs by Vehicle Class
+
+StateSRMC-AutoSRMC-CombSRMC-SingSRMC-TruckAverage0.00710.00010.02550.0062
+The short run marginal costs by vehicle class are clearly too small for combination trucks.  
+< More work is needed here >
+< Do same exercise as with long run marginal and average costs, but with improved model >
+Table 4.3.17 Short Run Marginal and Average Incremental Costs
+Vehicle TypeMC $/VMTMC
+$/VKTAIC $/VMTA$/VKTYaYsYc
+4.3.7 Economies of Scale, Scope, Density, and Network Utilization
+4.3.7.1 Economies of Scale
+The technical property of economies of scale can be calculated in the multi-product output context.  The technical property of economies of scale in the multi-product output case is:
+(4.3.13) Sn = ICn /Â(iŒN)(Yi*∂c(Y)/∂Yi)
+
+where we have:
+constant returns to scale for Sn = 1
+increasing returns to scale for Sn > 1
+decreasing returns to scale for Sn < 1
+
+The technology associated with economies of scale is clearly different from that of economies of scope.  With economies of scale, the cost of producing a more transportation output within the same network is lower for larger levels of output.  The economic interpretation of economies of scale is :
+(4.3.14) S = cost/(amount produced)*(marginal cost) = cost/revenue
+4.3.7.1.1 Long Run Economies of Scale
+Auto
+Single Unit Trucks
+Combination Trucks
+
+4.3.7.1.2 Short Run Economies of Scale
+Auto
+Single Unit Trucks
+Combination Trucks
+
+Returns to density (RTD), follwoing Caves, Christensen, and Tretheway (1984), is defined as the proportional increase in physical outputs made possible by a proportional increase in all inputs with the network  (linear miles), output attributes, and input prices held constant
+RTD = ∑i   [ ∂ ln C/∂ln Yi ]  -1
+Returns to density exist if unit costs fall as the highway network adds traffic to the road miles it already serves and the new traffic causes no change to output attributes.  We expect to find this.  This is in contrast to returns to scale (RTS), which is the proportional increase in outputs and linear miles of roadway served made possible by a proportional increase in  all inputs and output attributes and input prices held constant.  This is defined similarly as:
+RTS = [ ∂ ln C/∂ln P  +  ∑i  ∂ ln C/∂ln Yi ]  -1
+
+4.3.7.2.1 Long Run Economies of Densities
+Single Unit Trucks
+Combination Trucks
+
+4.3.7.2.2 Short Run Economies of Densities
+Auto
+Single Unit Trucks
+Combination Trucks
+Economies of scope answers the question of whether it is cheaper to produce two productes jointly or separately.  In this case, is it cheaper to provide roads for the use of both cars and trucks, or provide separate facilities for each.  While we expect there to be some economy of scope in having the different vehicle types sharing capacity, particularly since they have somewhat different peaking characterisitcs, there is a diseconomy that trucks do more damage to the roadbed, and thus require thicker pavements than would be needed for cars alone.  However, the diseconomy is probably outweighed by sharing of capacity, particularly since roadways are highly indivisible, you can’t build half a lane.
+Baumol (1977a,b), Baumol, Bailey and Willig (1977), and Panzar and Willig (1977) have introduced the the notion of “subadditive” cost function as a method of characterizing the structure of joint production of multiple outputs.  A cost function is said to be subadditive at an output vector Y* if and only if it is cheaper to have a single firm (agency, facility) produce Y* than it is to split production among more than one firm (agency, facility) in any fashion.  Subadditivity provides the basis to determine the least cost organization of the highway system.   While the subadditivity of a cost function per se is very difficult to test, its sufficiency conditions expressed in terms of various scale and scope economies are easier to test.  Baumol (1977b) has shown that a cost function is strictly subadditive at output vector Y* if the ray average costs are strictly declining and (non-strict) transray convexity holds at the output vector.  Ray average cost declines if the ray overall cost elasticity is less than one, meaning ray increasing returns to scale are greater than one.
+Transray convexity concerns the properties of the cost function when the product mix changes.  It implies inter-product complementarity.  Baumol (1977a) has noted that transray convexity is related to economies of scope.  Panzar and Willig (1978) have shown that cost complementarity between products i and j can be examined by evaluating the following second-order derivatives of each data point:
+∂2C/∂Yi ∂Yj
+  Economies of scope is similar to a measure of average cost divided by marginal cost.  The technical property of economies of scope can be expressed as follows in the multi-product output context:
+(4.3.12) SCn(Y) = [C(Yn) + C(Ym-n) - C(Y)]/C(Y)
+
+The quantity C(Yn) + C(Ym-n) represents the total cost of producing both vectors of flows separately and C(Y) represents the cost of producing both vectors of flows simultaneously.
+If SCn > 0 then there are economies of scope
+If SCn < 0 then there are diseconomies of scope
+If SCn = 0 then there are no economies of scope
+4.3.7.3.1 Long Run Economies of Scope
+Auto
+Single Unit Trucks
+Combination Trucks
+
+
+Single Unit Trucks
+Combination Trucks
+4.3.7.4 Economies of Network Utilization
+4.3.7.4.1 Long Run Economies of Network Utilization
+Auto
+Single Unit Trucks
+Combination Trucks
+
+4.3.7.4.2 Short Run Economies of Network Utilization
+Auto
+Single Unit Trucks
+Combination Trucks
+
+4.3.8 Comparison
+We can compare the econometric approach taken above with other studies.  Miller and Moffet (1993) calculate total annual road capital and operating expenses attributable to cars as $85.7 billion per year, including $48 billion of pavement wear costs, $24.8 billion of other maintenance, and $12.6 billion of expansion and construction costs. They subtract road user fees from cars and light trucks of $21.5 billion, and estimate an annual capital and operating cost of $64 billion per year or $0.021 per pmt ($0.013/pkt). To estimate the full cost, not including user payments (which are simply transfers),  application of their methodology produces an estimate of $0.028 per pmt ($0.017/pkt), which is about 50% higher than our estimate of $0.019/pmt ($0.011/pkt) average cost. Obviously the methodologies are dissimilar, in part explaining the difference.   We take an econometric approach, they adopt a crude engineering approach, but extrapolate the results to the national system. Furthermore, they adopt FHWA (1982) cost estimates of pavement wear as a fixed $/ESAL-mile, with passenger cars responsible for 0.05 ESAL per mile. However the damage per mile is not a linear function of ESALs, but rather non-linear, increasing with the third or fourth power (Small, Winston, Evans 1989), suggesting the amount of pavement damage attributed to automobiles by the Miller and Moffet (1993) study is significantly overstated.
+Appendix 4.3.2: Data
+Table Expenditures by State
+StateSC Stock Capital 1988 millionsCapital Expend. 1993 thousdCm Maint. Expend. 1993 thousdCl1 Admin. Expend. 1993 thousdCl2   Law Safe Expend. 1993 thousdInterest 1993 thousdBond Retire. 1993 thousdAlabama8905.7447023215786872558573591112820436AlaskaNA2420003340030088401161341121623Arizona7955.02480799688397052778446154305359239Arkansas362332934124252445163661449California42835.4221353233424601046908118255935336Colorado6574.39341276125208968864325863757Connecticut7236.71493147561317130168579206380Delaware2112.78205535506964605926331Dist.  of  Col.108194279541971507313546061Florida19987.91684969197397428351271756153681Georgia12440.0873769616351712718146645300966HawaiiNA3037461508138613163651896822637Idaho3010.18124933214574393014397341545Illinois28835.591469756256982260011126439129070115485Indiana10713.72635631189409195916418385223112687Iowa10535.5641264058645952736689523439Kansas7667.174335988957518310944942142628Kentucky12137.85NA88047109820103564143452Louisiana5988357149485661116970107470107504Maine2547.35138465765781708642300120151593311768.0247163310074710836416161481688Massachusetts9194.59NANA214814174108245634
+StateSC Stock Capital 1988 millionsCapital Expend. 1993 thousdCm Maint. Expend. 1993 thousdCl1 Admin. Expend. 1993 thousdCl2   Law Safe Expend. 1993 thousdInterest 1993 thousdBond Retire. 1993 thousd
+Michigan18795.615614942058913567444873Minnesota6081279784514648418092756605127591Mississippi6702.66378303311464869315665762211494.6715567217728312422811715Montana 4165.411903491840116843139581723Nebraska5423.1527252643639429341534927120Nevada2782.09NANA240491296216786New  Hampshire2401.79581609627046005217224533154091041696197709381121254093238792New  Mexico4388.96316817525726531225322014New  York37413.162205223287345⎤⎤⎤⎤⎤⎤⎤283252409463North  Carolina10338.958207903842282036422887017703North  Dakota3129.330041206271522869311349923735.8582223039898333568921315551708Oklahoma6698.98333481850641918114138444444485638Oregon6837.713171431367174444447343324162Pennsylvania24206.9544444444524044443935190151225189444444444444441980.8927882979828023146844444444777.931271785269686404917>>>>⎬ΒΒΒΒΒΒΒΒΒΒΒΒΒΒ1890513185321403>>>>>>⎬⎬⎬⎬ΒΒΒΒΒTennessee11110.42569278>>>>>>>⎬⎬⎬⎬⎬⎬ΒΒΒΒΒΒ16894Texas>>>>>>>>>⎬⎬⎬⎬⎬⎬⎬⎬ΒΒΒΒΒΒΒ804375351868246617>Utah575004083133745>>0Vermont1819.611098621506720155990Virginia62576642918714323516800899058190483Washington12142.256762596430223929917306495899West  Virginia7562.87467439145015382472920941355Wisconsin10981.496500017360612844726122872021135877Wyoming3571.61587863012624522238961871159Total533344.042823387166002767296290708826236207134588962Average10457.725882051375051430641389857099489979Notes: 
+Table Prices by State
+StatePl Gov
+Salary 
+(1993)Pk Bond 
+Rating 
+(1994)Pm Bit.
+Concrete 
+(1993)Excav (1993)Reinf.
+ Steel 
+(1993)Struct 
+Steel
+(1993)Struct
+Concrete
+(1993)Alabama25028  AA25.491.60.4190.862217.9Alaska37943  AA31.891.890.4641.161855.03Arizona24995   X22.425.210.3541.62206.73Arkansas22793  AA26.281.310.5440.674259.97California33080  A128.793.150.4141.07256.86Colorado27380   X28.352.480.3620.79201.17Connecticut35320  AA32.45.330.6310.887336.99Delaware28593 AA126.853.40.6320.632261.13Dist.  of  Col.4385554.4910.130.4880.898616Florida27116  AA19.022.510.3770.66320.1Georgia24431 AAA30.472.140.3990.868308.24Hawaii30420  AA65.1418.580.5850.585616.43Idaho22276   X21.822.790.4820.714242.58Illinois29712  A129.974.260.868387.64Indiana25309   X22.96.970.4740.811295.89Iowa24183   X22.932.170.430.782242.23Kansas22923   X24.422.150.5530.755279.65Kentucky23908  AA28.417.430.5130.792307.8Louisiana22383BAA128.625.790.3250.685215.76Maine24466  AA24.534.240.8110.806300.09Maryland32930 AAA26.22.480.5050.808286.69Massachusetts31609  A128.963.170.7190.68393.8
+StatePl Gov
+Salary 
+(1993)Pk Bond 
+Rating 
+(1994)Pm Bit.
+Concrete 
+(1993)Excav (1993)Reinf.
+ Steel 
+(1993)Struct 
+Steel
+(1993)Struct
+Concrete
+(1993)
+Michigan30074  A126.643.230.5571.1268.24Minnesota28052 AA119.281.580.4470.825150.76Mississippi20777  AA29.171.650.3340.74211.04Missouri24807 AAA23.542.570.6060.771317.83Montana 23744  AA23.743.210.5130.655238.51Nebraska23214   X22.212.030.7810.635304.88Nevada30929  AA20.673.330.994236.94New  Hampshire26304  AA26.43.090.4821.115209.89New  Jersey35532 AA127.287.110.751.175320.62New  Mexico2508322.472.680.5922.241298.37New  York33575   A29.274.760.7270.978426.54North  Carolina24581 AAA25.821.920.4480.826250.09North  Dakota21716  AA53.341.020.5812.157328.51Ohio27157  AA22.53.660.4670.704269.34Oklahoma23145  AA27.522.160.4671.126213.21Oregon27778  AA27.547.140.4560.665252.68Pennsylvania29870  A130.463.70.6340.998317.11Rhode  Island3102431.173.350.4830.885247.9724142 AAA24.892.660.4430.851South  Dakota21562   X12.81.220.47204.59Tennessee24812 AAA22.781.930.443220.25Texas24957  AA31.760.3220.748221.41Utah2422124.442.630.4661.481208.36Vermont24989  AA32.832.130.4910.82263.2Virginia2902825.332.720.4950.795269.71Washington29721  AA28.292.370.5240.976306.82West  Virginia23614  A126.513.040.5350.961305.65Wisconsin27228  AA2.081.650.441.083171.78Wyoming23275   X18.081.260.5550.555268Average27168AA18.812.50.4670.861261.89
+Notes: Source: FHWA 1994b, BLS 1995, Units: Bituminous Concrete $/ton, Excavation $/cu yd, Reinforcing Steel  $/lb, Structural Steel $/lb, Structural Concrete $/ton
+
+Table Outputs by State
+Ya Auto VMT (millions)Ys Single Truck VMT (Millions)Yc Comb. Truck VMT (millions)%URBAN%FREEWAYAlabama29461713791640.500.20Alaska27231057610.480.29Arizona204351064339690.610.27Arkansas14029320558470.350.24California21749532116129360.800.42Colorado2687425560.590.32Connecticut2178914280.41Delaware53564750.610.15Dist.  of  Col.3459111.000.24Florida9602697470.710.22Georgia5016017596101470.590.28Hawaii68411190360.730.29Idaho5615338417660.330.22Illinois6466212465105140.680.27Indiana364309442112010.490.23Iowa (*)15135314856430.360.21Kansas519530840.470.24Kentucky934755930.440.25Louisiana88220.500.25Maine304111270.260.19Maryland1194827940.690.37Massachusetts39503560422410.810.37
+Ya Auto VMT (millions)Ys Single Truck VMT (Millions)Yc Comb. Truck VMT (millions)%URBAN%FREEWAY
+Michigan610711614270060.630.26Minnesota (*)32868518531090.510.26Mississippi17133443546710.330.17Missouri38590712675380.530.31Montana 4818251811890.240.258402355826610.390.1954715148815390.590.30730723883720.370.254397650840.800.2711899278237710.370.26New  York82651186260.72North  Carolina4910072270.500.22North  Dakota406012580.260.20Ohio71213117670.610.29Oklahoma 2317376530.510.25Oregon16551816432110.440.28Pennsylvania6086214562137750.580.23Rhode  Island598210914860.850.30South  Carolina25581392455440.400.26South  Dakota538111916460.210.22Tennessee875773990.550.28Texas112296183500.650.32Utah1122916480.35Vermont48142930.280.22Virginia4678361310.530.28Washington3371931910.660.32West  Virginia11681222325740.280.28Wisconsin36561563754300.470.20Wyoming2786168317480.260.32Total1669617374971249407Average32738735248900.530.27note: (*) adjust sing truck & cars (move 10% cars --> sing)					
+Table: Network Size by State
+StateL - TotalMilesL - %FreewayL - %UrbanW - %UrbFwy > 4 lanesW - %RurFwy     > 4 lanesAlabama922090.0100.210.140.00Alaska0.0760.130.190.00Arizona557630.0230.290.270.00Arkansas771920.0080.34California1692010.0230.880.21Colorado787210.0150.330.03Connecticut203570.0270.690.22Delaware55440.0090.73NADist.  of  Col.11070.0301.000.71NAFlorida1128080.0150.440.480.10Georgia1108790.0130.240.620.14Hawaii41060.0240.440.86NAIdaho588350.0100.060.030.00Illinois0.0160.260.490.02Indiana923740.210.410.04Iowa1127080.080.05Kansas1332560.070.420.00Kentucky726320.140.380.05Louisiana595990.230.330.01Maine225100.0170.110.020.04Maryland293130.0240.470.730.54Massachusetts305630.0250.640.800.36
+StateL - TotalMilesL - %FreewayL - %UrbanW - %UrbFwy > 4 lanesW - %RurFwy     > 4 lanes
+Michigan1176590.0120.240.600.12Minnesota1299590.0080.110.450.03Mississippi728340.0100.110.000.00Missouri0.0120.130.570.01Montana 0.0170.030.000.00Nebraska0.0050.250.00Nevada0.0130.100.310.00New  Hampshire0.0180.190.270.12New  Jersey350970.0200.680.820.50New  Mexico608120.0160.100.290.01New  York1118820.0210.350.550.07North  Carolina960280.0130.230.260.03North  Dakota867270.0070.020.080.00Ohio1138230.0170.280.290.021124670.0090.110.340.00960360.0080.100.400.041170380.0180.280.220.0260570.780.670.00641580.0140.160.360.02South  Dakota833050.0080.00Tennessee850370.0140.440.03Texas2941420.0150.540.02Utah405080.0230.660.02Vermont141660.0240.000.00Virginia684290.0190.230.430.15Washington794280.0130.220.600.19West  Virginia350450.0160.090.100.05Wisconsin1109780.0070.140.390.10Wyoming376420.0240.060.000.00Total3904721Average765630.240.07
+Appendix 4.3.4: Results
+
+ OLS
+ResultValueMultiple-R.97661R-Square.95376Adjusted-R-Square.94220Standard-Error270574.13891F82.50992Signif-F.0000
+Analysis of Variance
+.DFSum-of-SquaresMean-Square848324651011027.08806040581376378.39Residual322342731668617.4644073210364644.2958
+VariableBBetaSig-T(Constant)-2832655.0741013934.430.0087NL2.4980791.708487.113989.1534NW-722166.9716461088.7703-.115305.1271PK44878582.64811409108.91.154594.0004PL1992318.9674544244.0983.2588963.661PM126376.59410163963.1927.030620.771.4465YA14.7890932.589216.5160965.712.0000YC41.38023919.310170.1621002.143.0398YS28.26757416.089286.1856531.757.0885
+Residuals Statistics:
+MinMaxMeanStd.Dev.N*PRED85341.77345464372.00001225610.94241099143.428041*RESID-563457.3750681895.5625.0000242008.867041*ZPRED-1.03743.8564.00001.000041*ZRESID-2.08252.5202.0000.894441 WLS
+ResultValueMultiple-R.99906R-Square.99813Adjusted-R-Square.99766Standard-Error.99121FSignif-F.0000
+Analysis of Variance
+DFSum-of-SquaresMean-SquareRegression816750.766322093.84579Residual3231.44012.98250
+VariableBSE-BBetaT(Constant)-2788278.350151409.5314-18.415.0000NL2.069489.280612.1983547.375.0000NW-808121.006673159.60726-.447028-11.046.0000PK45690716.9241393318.291.44824932.793.0000PL2119504.4493149411.4127.52103314.186.0000PM140686.3732219307.51453.1231967.287.0000YA13.972628.954222.53024214.643.0000YC47.3349104.242215.36836111.158.0000YS28.8995552.946083.2042159.809LOG- OLS
+
+ResultValue.97627R-Square.95311Adjusted-R-SquareStandard-Error.20765F81.29699Signif.F.0000
+Analysis of Variance
+xDFSum-of-SquaresMean-SquareRegression828.044013.50550Residual321.37983.04312
+VariableBSE-BTSig-T(Constant)10.9196732.0757525.261.0000LNNL.182302.107271.1621121.699.0989LNNW-.3896671.020363-.034611-.382.7051LNPK1.913634.494598.1555513.869.0005LNPL1.123301.459796.1841882.443.0203LNPM.017279.076508.009021.226LNYA.432158.105208.5178354.108.0003LNYC.102205.084894.1250501.204.2374LNYS.176604.084595.1909482.088.0449
+Residuals Statistics:
+MinMaxMeanStd-DevN*PRED12.079815.516013.6682.837341*RESID-.2987.4436.0000.185741*ZPRED-1.89702.2069.00001.000041*ZRESID-1.43862.1364.0000.894441
+LOG- WLS
+ResultValueMultiple-R.99896R-Square.99792Adjusted-R-Square.99740Standard-Error1.06748F1918.26235Signif-F
+Analysis of Variance
+DFSum-of-SquaresRegression817487.199532185.89994Residual3236.464671.13952
+VariableBSE-BTSig-T(Constant)11.185848.97584211.463.0000LNNL.183707.040161.1483924.574.0001LNNW-.643905.546835-.047706-1.178.2477LNPK1.923472.169506.18520711.348.0000LNPL1.176959.190744.1270406.170.0000LNPM.044523.023457.0182021.898.0667LNYA.450451.60377111.363.0000LNYC.103127.040753.1110032.531.0165LNYS.149631.0511172.927.0062
+SHORT OLS
+
+ResultValueMultiple-R.96260R-Square.92659Adjusted-R-Square.90824Standard-Error154567.51396F50.48831Signif-F.0000
+Analysis of Variance
+DFSum-of-SquaresMean-SquareRegression89649777144951.816001206222143118.98Residual32764515723904.6696023891116372.0209
+VariableBSE-BBetaTSig-T-523632.1600579217.6768-.904.3727NL1.350326.975986.1359081.384.1761NW18745.620934263400.4315.006602.071.9437PK2842899.50716517539.362.021600.436.6656PL244544.76597310903.5387.070093.787.4373PM25376.54194393665.20826.013562.271.7882YA8.8337181.479109.6799575.972.0000YC3.70152811.031080.031983.336YS9.7395019.191126.1410911.060.2972
+MinMaxMeanStd-DevN*PRED-2339.92922520263.5000472726.7073491166.396141*RESID-354857.8438256357.2500.0000138249.387341*ZPRED-.96724.1687.00001.000041*ZRESID-2.29581.6585.0000.894441
+SHORT WLS
+ResultValueMultiple-R.99950R-Square.99900Adjusted-R-SquareStandard-Error.89786F3990.96322Signif-F.0000
+Analysis of Variance
+Sum-of-SquaresMean-SquareRegression825738.57199Residual32.80615VariableBSE-BBetaTSig-T(Constant)-227865.1032120604.9838-1.889.0679NL.566331.290385.0793041.950.0599NW-19453.8096364369.68581-.013485-.302.7644PK1752862.05201826628.654.008032.960.3444PL146305.62382105234.9356.0888021.390.1740PM7382.07028510789.90862.022951.684.4988YA10.257065.504453.81962920.333.0000YC2.9241722.126402.0196131.375.1786YS6.6908972.427309.0656552.757.0096
+SHORTLOG- OLS
+ResultValueMultiple-R.95162R-Square.90559Adjusted-R-Square.88198Standard-Error.33995F38.36627Signif-F.0000
+Analysis of Variance
+DFSum-of-SquaresMean-SquareRegression835.470054.43376Residual323.69805.11556
+VariableBSE-BTSig-T(Constant)5.7858433.3981981.703.0983LNNL.036100.175613.027824.206.8384LNNW-.9973131.670429-.076778-.597.5547LNPK.618277.809702.043559.764.4507LNPL.595544.752728.084638.791.4347LNPM-.043611.125251-.019735-.348.7300LNYA.725562.7535404.213.0002LNYC-.006628.138979-.007028-.048.9623LNYS.212883.1384901.537.1341
+Residuals Statistics:
+MinMaxMeanStd-DevN*PRED10.861014.680912.6076.941741*RESID-.5714.8179.0000.304141*ZPRED-1.85482.2017.00001.000041*ZRESID-1.68092.4059.0000.894441
+SHORTLOG- WLS
+ResultValueMultiple-R.99971R-Square.99942Adjusted-R-Square.99928Standard-Error1.00901FSignif-F.0000
+Analysis of Variance
+DFSum-of-SquaresMean-SquareRegression856275.449217034.43115Residual3232.578991.01809
+VariableBSE-BBetaTSig-T(Constant)4.304089.8002905.378.0000LNNL.125561.051162.1638682.454.0197LNNW-.326370.402161-.037761-.812.4231LNPK.473274.131058.0508363.611.0010LNPL.605091.080689.1263077.499.0000LNPM.027391-.013733-.991LNYA.032076.64050421.368.0000LNYC.002709.012882.002446.210.8348LNYS.193258.011730.25640816.476.0000
+Appendix 4.3.6 Long and Short Run Marginal Costs
+Table Long Run Marginal Costs by State
+StateLRMC-Auto ($/mi)LRMC-CombLRMC-SingLRMC-TruckAlabama0.01350.01270.01430.0136Alaska0.02230.01310.32940.0304Arizona0.01420.00620.02420.0111Arkansas0.01510.01520.01200.0131California0.00920.01420.05100.0248Colorado0.01110.04960.03870.0425Connecticut0.01260.01940.06380.0330Delaware0.01180.01370.04420.0231Dist.  of  Col.0.00950.08091.01450.1775Florida0.00850.01330.02780.0192Georgia0.00970.00630.01590.0098Hawaii0.00810.01070.51850.0254Idaho0.02010.00760.02120.0123Illinois0.01340.01590.02740.0212Indiana0.01330.01170.01430.0131Iowa0.01710.01880.01520.0165Kansas0.01560.01090.02650.0167Kentucky0.01340.00760.01830.0116Louisiana0.01630.00860.02400.0139Maine0.01390.00830.03250.0149Maryland0.01180.00610.03790.0122Massachusetts0.01040.01680.06070.0293
+StateLRMC-Auto ($/mi)LRMC-CombLRMC-SingLRMC-Truck
+Michigan0.01320.01140.03800.0194Minnesota0.01160.01690.04070.0258Mississippi0.01210.01070.01470.0127Missouri0.01000.01240.01700.0147Montana 0.02150.00940.02880.0156Nebraska0.01970.01060.02060.0149Nevada0.00700.05880.08220.0707New  Hampshire0.01220.00850.07920.0181New  Jersey0.01200.01160.03420.0191New  Mexico0.01510.01470.01570.0153New  York0.01410.01430.04490.0240North  Carolina0.00890.01380.01280.0132North  Dakota0.02000.01480.03560.0226Ohio0.01030.01430.01990.0172Oklahoma0.01310.00910.02340.0143Oregon0.01830.00850.03130.0149Pennsylvania0.01440.01380.02100.0173Rhode  Island0.01450.01820.05900.0307South  Carolina0.00970.01450.01490.0147South  Dakota0.01590.01650.04390.0261Tennessee0.01020.00910.01550.0120Texas0.01040.00820.02100.0128Utah0.01160.00870.02610.0143Vermont0.01260.01530.06860.0282Virginia0.00980.01000.02480.0155Washington0.01350.00840.04720.0163West  Virginia0.01380.01660.02080.0189Wisconsin0.01100.01640.02460.0204Wyoming0.02630.01000.01390.0120Average0.01340.01520.06610.0227
+StateSRMC-AutoSRMC-CombSRMC-SingSRMC-TruckAlabama0.00810.00010.00760.0043Alaska0.00650.00010.08260.0046Arizona0.00730.00010.01100.0030Arkansas0.00860.00010.00600.0040California0.00600.00020.02930.0085Colorado0.00670.00050.02060.0136Connecticut0.00620.00020.02760.0085Delaware0.00580.00010.01890.0059Dist.  of  Col.0.00340.00050.31190.0327Florida0.00610.00020.01760.0073Georgia0.00670.00010.00970.0036Hawaii0.00320.00010.17810.0052Idaho0.00880.00010.00810.0028Illinois0.00770.00020.01380.0064Indiana0.00800.00010.00760.0042Iowa0.00920.00020.00720.0047Kansas0.00800.00010.01200.0045Kentucky0.00750.00010.00900.0034Louisiana0.00750.00010.00970.0034Maine0.00670.00010.01380.0038Maryland0.00640.00010.01820.0035Massachusetts0.00570.00020.02900.0084
+StateSRMC-AutoSRMC-CombSRMC-SingSRMC-Truck
+Michigan0.00720.00010.01820.0056Minnesota0.00700.00020.02150.0082Mississippi0.00730.00010.00780.0040Missouri0.00710.00020.01060.0055Montana 0.00900.00010.01060.0034Nebraska0.00910.00010.00840.0036Nevada0.00490.00070.05060.0261New  Hampshire0.00550.00010.03110.0043New  Jersey0.00680.00010.01710.0057New  Mexico0.00840.00010.00780.0045New  York0.00730.00010.02040.0065North  Carolina0.00680.00020.00880.0054North  Dakota0.00830.00010.01290.0049Ohio0.00700.00020.01190.0062Oklahoma0.00730.00010.01160.0042Oregon0.00850.00010.01270.0036Pennsylvania0.00810.00010.01050.0052Rhode  Island0.00610.00010.02180.0068South  Carolina0.00690.00020.00930.0055South  Dakota0.00760.00010.01840.0066Tennessee0.00710.00010.00940.0044Texas0.00700.00010.01250.0046Utah0.00670.00010.01320.0043Vermont0.00570.00010.02710.0067Virginia0.00650.00010.01460.0054Washington0.00690.00010.02110.0044West  Virginia0.00730.00020.00970.0053Wisconsin0.00790.00020.01540.0077Wyoming0.01070.00010.00490.0026TotalAverage0.00710.00010.02550.0062
+PAGE  
+
+
+PAGE  10
+
+
+
+

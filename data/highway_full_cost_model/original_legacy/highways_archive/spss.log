@@ -1,0 +1,220 @@
+[Next command's output on page   1
+get file='C:\HIGHWAYS\HIGHWAY5.X'.
+[Next command's output on page   2
+
+select if (YEAR > 0).
+
+compute irate = 0.07.
+
+if ( BONDRATE = '   X' ) IRATE = 0.0555.
+if ( BONDRATE = ' AAA' ) IRATE = 0.0475.
+if ( BONDRATE = ' AA1' ) IRATE = 0.0495.
+if ( BONDRATE = '  AA' ) IRATE = 0.0515.
+if ( BONDRATE = '  A1' ) IRATE = 0.0535.
+if ( BONDRATE = '   A' ) IRATE = 0.0555.
+if ( BONDRATE = 'BBA1' ) IRATE = 0.0575.
+if ( BONDRATE = ' BBB' ) IRATE = 0.0595.
+
+compute x = 1.
+
+* Interest Rate, assume = bondrate
+
+* means variables=IRATE by x.
+
+compute TOTCAP=CAPRI+CAPRL+CAPUI+CAPUL.
+[Next command's output on page   3
+compute MILRLSQ = MILRL * MILRL.
+compute MILRISQ = MILRI * MILRI.
+
+* HIGHINF = Inflator 1988 to 1993 (assume 20%)
+
+select if (MNTRI > 0 and MNTRL > 0 and MNTUI > 0 and MNTUL > 0).
+select if (ADM_MISC > 0 and LAW_SAFE > 0 and HIGHWAY > 0).
+
+compute HIGHINF = 1.2 * HIGHWAY.
+compute CAPNEW = 1000*HIGHINF*IRATE.
+compute TOTEXP = CAPNEW+MNTRI+MNTRL+MNTUI+MNTUL+ADM_MISC+LAW_SAFE.
+compute LNTOTEXP=LN(TOTEXP).
+
+compute LNVMTRI=LN(VMTRI).
+compute LNVMTRL=LN(VMTRL).
+compute LNVMTUI=LN(VMTUI+VMTUF).
+compute LNVMTUL=LN(VMTUL).
+compute LNMILRI=LN(MILRI).
+compute LNMILRL=LN(MILRL).
+compute LNMILUI=LN(MILUI+MILUF).
+compute LNMILUL=LN(MILUL).
+
+compute VMTTOT=VMTRI+VMTRL+VMTUI+VMTUL+VMTUF.
+compute MILETOT=MILRI+MILRL+MILUI+MILUL+MILUF.
+[Next command's output on page   4
+
+compute VCRI = (VMTRI/MILRI).
+compute VCRL = (VMTRL/MILRL).
+compute VCUI = ((VMTUI+VMTUF)/(MILUI+MILUF)).
+compute VCUL = (VMTUL/MILUL).
+
+compute LNVCRI = LN(VMTRI/MILRI).
+compute LNVCRL = LN(VMTRL/MILRL).
+compute LNVCUI = LN((VMTUI+VMTUF)/(MILUI+MILUF)).
+compute LNVCUL = LN(VMTUL/MILUL).
+
+compute LNRTRUC=LN((RTRUCOM/100)*(VMTRI+VMTRL)).
+compute LNUTRUC=LN((UTRUCOMB/100)*(VMTUI+VMTUF+VMTUL)).
+compute RTRUC=((RTRUCOM/100)*(VMTRI+VMTRL)).
+compute ORTRUC=1/((RTRUCOM/100)*(VMTRI+VMTRL)).
+compute RTRUC2=((RTRUCOM/100)*(VMTRI+VMTRL))**2.
+
+compute UTRUC=((UTRUCOMB/100)*(VMTUI+VMTUF+VMTUL)).
+compute OUTRUC=1/((UTRUCOMB/100)*(VMTUI+VMTUF+VMTUL)).
+compute UTRUC2=((UTRUCOMB/100)*(VMTUI+VMTUF+VMTUL))**2.
+
+compute RTRUS=((RTRUSING/100)*(VMTRI+VMTRL)).
+compute ORTRUS=1/((RTRUSING/100)*(VMTRI+VMTRL)).
+compute RTRUS2=((RTRUSING/100)*(VMTRI+VMTRL))**2.
+[Next command's output on page   5
+
+compute UTRUS=((UTRUSING/100)*(VMTUI+VMTUF+VMTUL)).
+compute OUTRUS=((UTRUSING/100)*(VMTUI+VMTUF+VMTUL)).
+compute UTRUS2=((UTRUSING/100)*(VMTUI+VMTUF+VMTUL))**2.
+
+compute RCAR=((RPASSVEH/100)*(VMTRI+VMTRL)).
+compute ORCAR=((RPASSVEH/100)*(VMTRI+VMTRL)).
+compute RCAR2=((RPASSVEH/100)*(VMTRI+VMTRL))**2.
+
+compute UCAR=((UPASSVEH/100)*(VMTUI+VMTUF+VMTUL)).
+compute OUCAR=((UPASSVEH/100)*(VMTUI+VMTUF+VMTUL)).
+compute UCAR2=((UPASSVEH/100)*(VMTUI+VMTUF+VMTUL))**2.
+
+compute lnrmgt4=LN(RMILGT4).
+compute lnrmle4=LN(RMILLE4).
+compute lnumgt4=LN(UMILGT4).
+compute lnumle4=LN(UMILLE4).
+compute lnmigt4=ln(rmilgt4+umilgt4).
+compute lnmile4=ln(rmille4+umille4).
+compute miles = milri+milrl+milui+miluf+milul.
+compute traffic= utruc+rtruc+utrus+rtrus+ucar+rcar.
+compute purbmil= (milui+miluf+milul)/(milri+milrl+milui+miluf+milul).
+compute umiles=milui+miluf+milul.
+compute rmiles=milri+milrl.
+[Next command's output on page   6
+compute mill=milrl+milul.
+compute lnmill =ln(mill).
+compute mili4=umille4+rmille4.
+compute mili5=umilgt4+rmilgt4.
+compute lnmili4=ln(mili4).
+compute lnmili5=ln(mili5).
+compute pfwy=(milui+miluf+milri)/(umiles+rmiles).
+compute lnpfwy=ln(pfwy).
+compute uwidth=(umille4*3+umilgt4*6)/(umille4+umilgt4).
+compute rwidth=(rmille4*3+rmilgt4*6)/(rmille4+rmilgt4).
+compute width=((umille4+rmille4)*4+milul*3+milrl*2+(rmilgt4+umilgt4)*7)/
+    (umille4+umilgt4+rmilgt4+rmille4+milul+milrl).
+compute lnuwidth=ln(uwidth).
+compute lnrwidth=ln(rwidth).
+compute purbtraf= (utruc+utrus+ucar)/(utruc+rtruc+utrus+rtrus+ucar+rcar).
+compute urbtraf= (utruc+utrus+ucar).
+compute rurtraf= (rtruc+rtrus+rcar).
+
+compute ptruck= 1-(ucar+rcar)/(utruc+rtruc+utrus+rtrus+ucar+rcar).
+compute truck= utruc+rtruc+utrus+rtrus.
+compute urbtruck=utruc+utrus.
+compute rurtruck=rtruc+rtrus.
+compute miles2=miles*miles.
+compute traffic2=traffic*traffic.
+[Next command's output on page   7
+
+compute rvc=(rurtraf*1000000/(365*24))/(rmille4*4*2000+rmilgt4*8*2000).
+compute uvc=(urbtraf*1000000/(365*24))/(umille4*4*2000+rmilgt4*8*2000).
+
+
+compute auto=ucar+rcar.
+compute comb=utruc+rtruc.
+compute sing=utrus+rtrus.
+compute lnumiles=ln(umiles).
+compute lnrmiles=ln(rmiles).
+compute lntotexp=ln(totexp).
+compute lnauto=ln(auto).
+compute lncomb=ln(comb).
+compute lnsing=ln(sing).
+compute lnpurbm=ln(purbmil).
+compute lnmiles=ln(miles).
+
+compute x=1.
+
+*means variables= PGSAL93 PGSAL94 PBCON93 PEXCAV93 PRESTL93 PSTSTL93
+*   PSTCON93 POPDENS by x.
+
+* means computed for 41 cases passing selects.
+
+[Next command's output on page   8
+compute mgsal93=26441.
+comptue mgsal94=27117.
+compute mbcon93=25.9261.
+compute mexcav93=3.0039.
+compute mrestl93=0.5074.
+compute mststl93=0.8809.
+compute mstcon93=266.311.
+compute mpopdens=142.64.
+
+
+
+compute pexcav=pexcav93/mexcav93.
+compute psurf=pbcon93/mbcon93.
+compute pstruc=pststl93/mststl93+pstcon93/mstcon93+prestl93/mrestl93.
+compute pdens=popdens/mpopdens.
+compute plabor=pgsal93/mgsal93.
+compute pconst=pexcav+psurf+pstruc.
+
+
+compute lnPEXCAV=ln(PEXCAV).
+compute lnPSURF=ln(PSURF).
+compute lnPLABOR=ln(PLABOR).
+compute lnPSTRUC=ln(PSTRUC).
+compute lnPDENS=ln(PDENS).
+[Next command's output on page   9
+compute lnPCONST=ln(PCONST).
+
+compute PKAP = capnew/miles.
+compute lnPKAP=ln(PKAP).
+compute lnirate=ln(irate).
+compute lnwidth=ln(width).
+compute pgt4=(rmilgt4+umilgt4)/(rmilgt4+rmille4+umilgt4+umille4).
+compute lnpgt4=ln(pgt4).
+compute mpsqm=miles/area.
+compute lnmpsqm=ln(mpsqm).
+compute varexp=totexp-capnew.
+compute lncapnew=ln(capnew).
+compute lnvarexp=ln(varexp).
+compute lntotexp=ln(totexp).
+
+compute h=(auto*auto+sing*sing+comb*comb)/((auto+sing+comb)*(auto+sing+comb)).
+compute lnh=ln(h).
+compute vmt=auto+comb+sing.
+compute lnvmt=ln(vmt).
+compute lnmiles2=ln(miles2).
+
+select if (auto > 0 and comb > 0 and sing > 0 and totexp > 0 and pdens>0).
+select if (plabor > 0 and pexcav > 0 and psurf > 0 and pstruc>0).
+
+[Next command's output on page  10
+regression variables=lntotexp lnauto lncomb lnsing lnplabor lnirate lnpsurf
+  /dependent=lntotexp
+  /method=enter.
+[Next command's output on page  15
+
+regression variables=lnvarexp lnauto lncomb lnsing lnplabor lnirate lnpsurf
+  /dependent=lnvarexp
+  /method=enter.
+[Next command's output on page  20
+
+regression variables=lncapnew lnauto lncomb lnsing lnplabor lnirate lnpsurf
+  /dependent=lncapnew
+  /method=enter.
+[Next command's output on page  25
+
+compute x=1.
+means variables=capnew totexp varexp by x.
+[Next command's output on page  30
+FINISH.
+

@@ -1,0 +1,189 @@
+Block Number  1.  Method:  Enter
+-------------------------------------------------------------------------------
+Page  23                          SPSS/PC+                             10/2/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+
+Variable(s) Entered on Step Number
+   1..    PTRUCK
+   2..    MILES
+   3..    PURBMIL
+   4..    TRAFFIC
+   5..    PURBTRAF
+-------------------------------------------------------------------------------
+Page  24                          SPSS/PC+                             10/2/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+
+
+Multiple R           .93257
+R Square             .86968
+Adjusted R Square    .85207
+Standard Error 365980.89198
+
+Analysis of Variance
+                    DF      Sum of Squares      Mean Square
+Regression           5 33073945470975.8280 6614789094195.17
+Residual            37 4955854491962.20960 133942013296.276
+
+F =      49.38547       Signif F =  .0000
+-------------------------------------------------------------------------------
+Page  25                          SPSS/PC+                             10/2/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+
+------------------ Variables in the Equation ------------------
+
+Variable              B        SE B       Beta         T  Sig T
+
+PTRUCK     249415.29654 719978.6448    .023489      .346  .7310
+MILES          1.750537     .983896    .166529     1.779  .0834
+PURBMIL    -353903.9286 1776056.389   -.024497     -.199  .8431
+TRAFFIC       14.652536    1.895726    .751188     7.729  .0000
+PURBTRAF   832032.52602 705508.9367    .149910     1.179  .2458
+(Constant) -152031.6153 886574.3135                -.171  .8648
+
+
+End Block Number   1   All requested variables entered.
+-------------------------------------------------------------------------------
+Page  26                          SPSS/PC+                             10/2/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+
+Residuals Statistics:
+
+                   Min           Max         Mean     Std Dev   N
+
+*PRED       83281.3203  4622172.5000 1119811.8726 887397.8207  43
+*RESID    -681535.2500  1200577.8750        .0000 343506.2380  43
+*ZPRED         -1.1681        3.9468        .0000      1.0000  43
+*ZRESID        -1.8622        3.2804        .0000       .9386  43
+
+Total Cases =       48
+-------------------------------------------------------------------------------
+Page  27                          SPSS/PC+                             10/2/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+
+
+From Equation   1:   1 new variables have been created.
+
+  Name       Contents
+  ----       --------
+
+  RESID2      Residual
+-------------------------------------------------------------------------------
+Page  28                          SPSS/PC+                             10/2/95 
+
+This procedure was completed at 10:53:42
+
+compute wres = 1/(resid2*resid2).
+
+regression variables= TOTEXP miles traffic purbmil purbtraf ptruck
+The raw data or transformation pass is proceeding  
+     48 cases are written to the compressed active file.
+   /regwgt wres
+   /dependent = TOTEXP
+   /method=enter.
+-------------------------------------------------------------------------------
+Page  29                          SPSS/PC+                             10/2/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+
+Listwise Deletion of Missing Data
+
+Weighted Least Squares -  Weighted By..    WRES
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+Block Number  1.  Method:  Enter
+-------------------------------------------------------------------------------
+Page  30                          SPSS/PC+                             10/2/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+
+Variable(s) Entered on Step Number
+   1..    PTRUCK
+   2..    PURBMIL
+   3..    TRAFFIC
+   4..    MILES
+   5..    PURBTRAF
+-------------------------------------------------------------------------------
+Page  31                          SPSS/PC+                             10/2/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+
+
+Multiple R           .98301
+R Square             .96631
+Adjusted R Square    .96176
+Standard Error       .96632
+
+Analysis of Variance
+                    DF      Sum of Squares      Mean Square
+Regression           5           991.04860        198.20972
+Residual            37            34.54964           .93377
+
+F =     212.26736       Signif F =  .0000
+-------------------------------------------------------------------------------
+Page  32                          SPSS/PC+                             10/2/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+
+------------------ Variables in the Equation ------------------
+
+Variable              B        SE B       Beta         T  Sig T
+
+PTRUCK     225133.25083 131109.9647    .058520     1.717  .0943
+PURBMIL    315343.22327 714416.6487    .040441      .441  .6615
+TRAFFIC       16.499807    1.249580    .819663    13.204  .0000
+MILES          1.289394     .286463    .234621     4.501  .0001
+PURBTRAF   331653.12444 231797.7378    .154288     1.431  .1609
+(Constant) -315975.6978 359699.3798                -.878  .3854
+
+
+End Block Number   1   All requested variables entered.
+-------------------------------------------------------------------------------
+Page  33                          SPSS/PC+                             10/2/95 
+
+This procedure was completed at 10:55:23
+
+
+
+*   LNVMTRI LNVMTRL LNVMTUI LNVMTUL
+*  utruc rtruc utrus rtrus ucar rcar
+*  NEWYORK CALIFORN SOUTHEAS MIDWEST NORTHEAS
+
+
+
+-------------------------------------------------------------------------------
+Page  34                          SPSS/PC+                             10/2/95 
+
+FINISH.
+
+End of Include file.

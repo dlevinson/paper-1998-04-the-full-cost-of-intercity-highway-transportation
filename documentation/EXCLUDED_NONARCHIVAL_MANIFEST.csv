@@ -1,0 +1,35 @@
+source_path,decision,category,reason,size_bytes
+/Users/dlev2617/Documents/~~Archives/HIGHWAYS/.FBCIndex,excluded,highways_archive_nonarchival,"backup, Finder index, scratch, or empty nonarchival file",307200
+/Users/dlev2617/Documents/~~Archives/HIGHWAYS/H4.BAK,excluded,highways_archive_nonarchival,"backup, Finder index, scratch, or empty nonarchival file",9628
+/Users/dlev2617/Documents/~~Archives/HIGHWAYS/H5.BAK,excluded,highways_archive_nonarchival,"backup, Finder index, scratch, or empty nonarchival file",9465
+/Users/dlev2617/Documents/~~Archives/HIGHWAYS/H5A.BAK,excluded,highways_archive_nonarchival,"backup, Finder index, scratch, or empty nonarchival file",8503
+/Users/dlev2617/Documents/~~Archives/HIGHWAYS/H5B.BAK,excluded,highways_archive_nonarchival,"backup, Finder index, scratch, or empty nonarchival file",8547
+/Users/dlev2617/Documents/~~Archives/HIGHWAYS/H5E.BAK,excluded,highways_archive_nonarchival,"backup, Finder index, scratch, or empty nonarchival file",8707
+/Users/dlev2617/Documents/~~Archives/HIGHWAYS/H5T.BAK,excluded,highways_archive_nonarchival,"backup, Finder index, scratch, or empty nonarchival file",9948
+/Users/dlev2617/Documents/~~Archives/HIGHWAYS/HIGHWAY2.BAK,excluded,highways_archive_nonarchival,"backup, Finder index, scratch, or empty nonarchival file",4016
+/Users/dlev2617/Documents/~~Archives/HIGHWAYS/REVIEW.BAK,excluded,highways_archive_nonarchival,"backup, Finder index, scratch, or empty nonarchival file",6360
+/Users/dlev2617/Documents/~~Archives/HIGHWAYS/SCRATCH.PAD,excluded,highways_archive_nonarchival,"backup, Finder index, scratch, or empty nonarchival file",11
+/Users/dlev2617/Documents/~~Archives/HIGHWAYS/TRANSLO2.BAK,excluded,highways_archive_nonarchival,"backup, Finder index, scratch, or empty nonarchival file",5183
+/Users/dlev2617/Documents/~~Archives/HIGHWAYS/TRANSLOG.BAK,excluded,highways_archive_nonarchival,"backup, Finder index, scratch, or empty nonarchival file",4853
+/Users/dlev2617/Documents/~~Archives/HIGHWAYS/WLS1.BAK,excluded,highways_archive_nonarchival,"backup, Finder index, scratch, or empty nonarchival file",4135
+/Users/dlev2617/Documents/~~Archives/HIGHWAYS/WLS3.BAK,excluded,highways_archive_nonarchival,"backup, Finder index, scratch, or empty nonarchival file",5298
+/Users/dlev2617/Documents/~~Archives/HIGHWAYS/X,excluded,highways_archive_nonarchival,"backup, Finder index, scratch, or empty nonarchival file",0
+/Users/dlev2617/Documents/~~Archives/Berkeley/Berkeley Work/Full Cost Project/C4 Highway/HCR.12.15.bak,excluded,c4_nonarchival,letter or backup variant not part of the archival data/code/documentation payload,85504
+/Users/dlev2617/Documents/~~Archives/Berkeley/Berkeley Work/Full Cost Project/C4 Highway/LETTER (Word5),excluded,c4_nonarchival,letter or backup variant not part of the archival data/code/documentation payload,20479
+/Users/dlev2617/Documents/~~Archives/Berkeley/Berkeley Work/Full Cost Project/EMAIL,excluded,full_cost_project_nonarchival_folder,email/search/correspondence folder excluded from package boundary,
+/Users/dlev2617/Documents/~~Archives/Berkeley/Berkeley Work/Full Cost Project/Searches,excluded,full_cost_project_nonarchival_folder,email/search/correspondence folder excluded from package boundary,
+/Users/dlev2617/Documents/~~Archives/Berkeley/Berkeley Work/Full Cost Project/Ted's,excluded,full_cost_project_nonarchival_folder,email/search/correspondence folder excluded from package boundary,
+/Users/dlev2617/Documents/~~Archives/Berkeley/Berkeley Work/Full Cost Project/Final++/ ES++ .doc,excluded,non_highway_report_component,non-highway report component excluded from this paper package,35840
+/Users/dlev2617/Documents/~~Archives/Berkeley/Berkeley Work/Full Cost Project/Final++/CR- References.doc,excluded,non_highway_report_component,non-highway report component excluded from this paper package,74752
+/Users/dlev2617/Documents/~~Archives/Berkeley/Berkeley Work/Full Cost Project/Final++/Chapter  One++.doc,excluded,non_highway_report_component,non-highway report component excluded from this paper package,19968
+/Users/dlev2617/Documents/~~Archives/Berkeley/Berkeley Work/Full Cost Project/Final++/Chapter  Two++ .doc,excluded,non_highway_report_component,non-highway report component excluded from this paper package,57856
+/Users/dlev2617/Documents/~~Archives/Berkeley/Berkeley Work/Full Cost Project/Final++/Chapter Seven++ .doc,excluded,non_highway_report_component,non-highway report component excluded from this paper package,51200
+/Users/dlev2617/Documents/~~Archives/Berkeley/Berkeley Work/Full Cost Project/Final++/Chapter Six++ .doc,excluded,non_highway_report_component,non-highway report component excluded from this paper package,128512
+/Users/dlev2617/Documents/~~Archives/Berkeley/Berkeley Work/Full Cost Project/Final++/Chapter Three++.doc,excluded,non_highway_report_component,non-highway report component excluded from this paper package,519168
+/Users/dlev2617/Documents/~~Archives/Berkeley/Berkeley Work/Full Cost Project/Final++/Chapter five ++ .doc,excluded,non_highway_report_component,non-highway report component excluded from this paper package,174080
+/Users/dlev2617/Documents/~~Archives/Berkeley/Berkeley Work/Full Cost Project/Final++/Contents++ .doc,excluded,non_highway_report_component,non-highway report component excluded from this paper package,83456
+/Users/dlev2617/Documents/~~Archives/Berkeley/Berkeley Work/Full Cost Project/Models/CongestionModels/ACongestionModel.123,excluded,non_highway_model,air/rail/HSR model source excluded from highway-only package,9136
+/Users/dlev2617/Documents/~~Archives/Berkeley/Berkeley Work/Full Cost Project/Models/NoiseModel/ANoiseModel.xls,excluded,non_highway_model,air/rail/HSR model source excluded from highway-only package,70144
+/Users/dlev2617/Documents/~~Archives/Berkeley/Berkeley Work/Full Cost Project/Models/NoiseModel/RNoiseModel.123,excluded,non_highway_model,air/rail/HSR model source excluded from highway-only package,25711
+/Users/dlev2617/Documents/~~Archives/Berkeley/Berkeley Work/Full Cost Project/Models/NoiseModel/RNoiseModel.XLS,excluded,non_highway_model,air/rail/HSR model source excluded from highway-only package,39936
+/Users/dlev2617/Documents/~~Archives/Berkeley/Berkeley Work/Full Cost Project/C3-Social/HSR-noise-extract,excluded,non_highway_model,air/rail/HSR model source excluded from highway-only package,198656

@@ -1,0 +1,91 @@
+4.2	 USER COSTS AND TRANSFERS
+
+4.2.1 Overview
+The cost of operating a vehicle depends on a number of factors, many of which are within the choice of the user.  For instance, the cost of operating a sub-compact (such as a Geo Metro) is very different  than the cost of a high priced luxury car (such as a Jaguar). Operating costs for a typical intermediate car are presented in table 4.1.1 for the years 1977-93. As of 1995, the most popular car size was the intermediate, the best-selling model was the Ford Taurus followed by the similar Honda Accord, suggesting this is a reasonable size to choose for analysis.
+ The operating costs considered include: the price of gas and oil, maintenance, and tires, in units of cents per mile (kilometer); and three kinds of insurance costs: fire/theft, collision, and property damage and liability, license registration and taxes, and depreciation, in dollars per year.   It should be noted that insurance costs as well as license registration and taxes are mostly transfers, and care will need to be taken to avoid double counting.  For instance, we cannot correctly attribute both the full cost of accidents as a social cost as well as insurance as an operating cost, obviously insurance is simply transferring part of the financial incidence of accidents from drivers to an insurance pool.  Similarly, license, registration, and taxes pay for part of constructing, maintaining, and operating the highway system.  We can express this as a series of equations:
+(4.2.1) UC(Y) = f(Cg, Co, Ct, Cf, Cp, Cc, Cl, Cd(A,Y), A,Y) 
+(4.2.2) Cd(A,D)  = - ß1 A - ß2 AY 
+(4.2.3) UC(Y) = (Cg + Co + Ct)Y + Cf + Cp + Cc + Cl + Cd(A,Y)
+(4.2.4) UT(Y)  = Cf + Cp + Cc + Cl + Cd(A,Y)
+(4.2.5) UN(Y) = UC - UT = (Cg + Co + Ct)Y + Cd(A,Y)
+
+where: 
+UC = User Operating Cost ($/yr)
+UT  = User Transfer Costs ($/yr)
+UN = Net User Costs ($/yr)
+Cg = Cost of Gas ($/mi or $/km)
+Co = Cost of Oil ($/mi or $/km)
+Ct = Cost of Tires ($/mi or $/km)
+Cf = Cost of  fire and theft (insured) ($/yr)
+Cp = Cost of property damage and liability (insured) ($/yr)
+Cc = Cost of collision (insured) ($/yr)
+Cl = Cost of licenses, fees, and taxes ($/yr)
+Cd = Cost of Depreciation ($/yr)
+Y = Output = Distance Traveled per Year (miles or km)
+A = Age (years over which car is depreciates), for purposes of our analysis A=1 when determining annual depreciation
+ß1, ß2 = coefficients from price model discussed in section 4.2.2
+
+Since we are dealing with a single output product, vehicle trips, we can apply basic economics to find the average and marginal costs per unit distance (D) (mile, kilometer):
+(4.2.6) AUC(Y) = UN(Y) / Y = Cg + Co + Ct - ß1A/Y - ß2A
+(4.2.7) AIC = MC = ∂ UN(Y)/ ∂ Y = Cg + Co + Ct - ß2A
+
+where: 
+AUC = Average Unit Cost
+AIC = Average Incremental Cost
+MC = Marginal Cost
+
+4.2.2  A Model of Car Price
+
+It is known that depreciation is partially a function of wear and tear on the vehcile, and partly a result of changing demand for an aging (unused) vehicle due to advances in technology (available in new cars and not in older ones) and changes in preferences.  To estimate which part is which, and thus to distinguish between average (stand-alone) cost or the marginal (incremental) cost, we developed a database of used car asking prices from a site on the world-wide-web for used car trading.  A model with the following form was estimated using ordinary least squares regression:
+(4.2.8) P = ß0 + ß1 A + ß2 AY + ß3 M
+
+where: 
+P = asking price (current $).
+A = Age of automobile = 1996 - Model Year
+Y = Output = Distance Traveled per Year (miles or km) for that particular car
+M = Make 1 if the car was a Ford Taurus, 0 if it was a Honda Accord
+ßx = model coefficients
+Table 4.2.1 SUMMARY OUTPUT
+Regression StatisticsMultiple R0.93513765R Square0.87448242Adjusted R Square0.86193066Standard Error1858.60104Observations34
+Table 4.2.2 ANOVA					
+dfSSMSFSignificance FRegression372200488324066829469.6701151.272E-13Residual301036319353454397.83Total33825636817
+Table 4.2.3 Car Price Model Estimation					
+CoefficientsStandard Errort StatP-valueß0 - const.20053.4964758.27574126.44617952.4023E-22ß1 - A-1351.3415201.914596-6.69263882.0486E-07ß2 - AY-0.02341790.01522374-1.53825060.13446925ß3 - M-2738.2386791.029384-3.46161420.00163497
+The implication of this is that the car loses $0.023/vmt in value, and loses $1351 in value per year, and Taurus’s sell for $2740 less than Honda’s,  all other things being equal.  The intercept term suggests that a new Honda Accord (1996) with no miles, is valued at $20,053.  Remembering that these are asking prices, not actual transaction prices, we can probably assume that an additional 10-20 percent markup is included in the price.  For a car that is driven 10,000 miles per year, the model estimates a depreciation of $1581, for a car driven 15,000 miles per year, the model estimates a depreciation of $1702.  These are less than the depreciated value given by the American Automobile Association, shown in Table 4.2.6 below, of $2883, even considering markup.
+Figure: 4.2.1  Price vs. Age
+
+Figure 4.2.2 Price vs. Miles
+
+4.2.3 The Average and Incremental Cost of an Owned Car
+Two approaches can be taken for estimating operating costs, we can take stand-alone (average) costs or incremental (marginal) costs.  In our case, stand-alone costs reflect the cost of owning the car as if intercity travel were routine, and at least in part, the reason for owning the car.  The incremental cost assumes that the car is already owned (or leased or rented), and that only the incremental cost of making the trip (ignoring a large part of the depreciation for instance) should be counted.  The efficient answer can be determined in principle by Ramsay pricing, which requires knowing the inverse elasticity of demand, and should fall between the stand-alone and incremental costs.  
+Applying equations 4.2.6 and 4.2.7 above, and assuming values for costs (described below) we can compute the average unit costs and average incremental or marginal cost of car ownership.  These are given in table 4.2.4 below.
+Table 4.2.4 Average Unit and Incremental Cost of Car Ownership
+VariableValue (english)Value (metric)Cg - Gas$0.025/vmt$0.015/vktCo - Oil$0.024 /vmt$0.014 /vktCt - Tires$0.009 /vmt$0.0054 /vktß1 - Age Depreciation$1351/yr$1351/yrA - Age1 yr1 yrY - Distance/Yr10,000 mi6,000 kmß2 - Distance Depreciation$0.023/vmt$0.014/vktAverage Unit Cost$0.216/vmt$0.130/vktMarginal Cost$0.081/vmt$0.049/vkt
+For a 1000 km (600 mi) trip, the average cost for the automobile user is $130, but the marginal cost is only $49. In all likelihood, the user perceives the cost of the trip as the marginal cost, if not lower, since he is likely to disregard the cost of oil, tires and depreciations from his calculation.
+The costs of highway trip can also be estimated considering the cost of car rental.  This is important not only for residents who don’t own a car, but also for visitors who enter California via air, and visit multiple cities within the state.   For a single trip, the stand alone user cost of a rental is the same as the incremental cost of rental.
+When a firm (such as Avis or Hertz) rents a vehicle, it can amortize the fixed costs of ownership over a much larger number of miles than the typical driver would undertake.  This price advantages is mitigated somewhat because the firm has some additional operating costs, including the salaries of rental agents and profit, which must be covered.  An intermediate car can be rented for about $90-$120 for a three-day weekend.  If we assume that the 600 mile trip can be made over that weekend, then the price is $0.15 - $0.20 per mile ($0.09 - $0.12/vkt)  in charges plus $0.025/vmt ($0.015/vkt) for gas, but excluding oil, maintenance and tires).   Excluding the cost of gas, the rental cost is less then the average unit cost of ownership, but more than the $0.08/vmt ($0.05/vkt) marginal cost of ownership.  So the cost clearly depends on the basis over which it is taken
+4.2.5 Price Estimates
+The estimates in table 4.2.6 (below) of operating costs estimated by the American Automobile Association (AAA) include gas cost of six cents per mile, excluding tax.   However the retail price of a gallon of gas (excluding tax) at the end of 1995 is about $0.70/gallon, which at 28 miles per gallon, the CAFE (Corporate Average Fuel Economy) standard for new cars which all manufacturers must achieve as a fleet average, translates to $0.025/mile for gas.  Therefore we use this value.  
+We adopt the AAA estimates in Table 4.2.6 for the price of oil and maintenance and tires.  As noted above, we estimated depreciation ourselves in section 4.2.2, and found a lower level than that given by AAA.
+4.2.6 Comparison with other studies:
+	Miller and Moffet (1993) cite estimates of the average personal automobile ownership cost as ranging from $0.25 - $0.30 per passenger mile traveled (pmt), ($0.15 - $0.18/pkt) including the fixed cost of  $0.17 - $0.22/ pmt ($0.10 - $0.13/pkt) for purchase, registration, and depreciation, and the variable costs of $0.08/ pmt ($0.05/pkt) for fuel, tolls, maintenance, and depreciation.  However they note that these costs are somewhat high, given that they assume new cars, while many cars are used.   A Swedish study (Kageson in OECD 1994) cites internal costs to the driver costs ranging from $0.14 - $0.21/ pmt ($0.084 - $0.126/pkt).  Our three estimates for average unit costs, marginal cost, and rental cost are summarized below for comparison with the other studies.
+
+Table 4.2.5: Cost Comparison
+Cost EstimateValue (english)Value (metric)Average Unit Cost$0.216/vmt$0.130/vktMarginal Cost$0.081/vmt$0.049/vktRental Cost$0.200/vmt$0.120/vktMiller and Moffett$0.275/pmt$0.165/pktKageson$0.175/pmt$0.105/pktTable 4.2.6 (US) Automobile Operating Costs - Intermediate Size Automobile 1993-1977
+YearGas/ OilMaint.TiresFire/ TheftCollisionProp.Dam/ LiabLic/ Reg/ TaxesDeprec(¢/mile)(¢/mile)(¢/mile)($/year)($/year) ($/year)($/year)($/year)19936.002.400.90107232385183288319926.002.200.90113261373179278019916.702.200.90115258353169254319905.402.100.90110247318165235719895.201.900.80109245309151209419885.201.600.8086203284139178419874.801.600.8087196252140150619864.481.370.6786191232130132019856.161.230.6592198213115125319846.191.040.6380200225106120719836.641.040.6880201222102134319826.741.000.635315324354135619816.271.180.727618025488128719805.861.120.647017224882103819794.111.100.65741682419094219783.891.100.66571382297489419774.111.030.668018825074847
+
+Table 4.2.7 (SI) Automobile Operating Costs - Intermediate Size Automobile 1993-1977
+YearGas/ OilMaint.TiresFire/ TheftCollisionProp.Dam/ LiabLic/ Reg/ TaxesDeprec(¢/km)(¢/km)(¢/km)($/year)($/year) ($/year)($/year)($/year)19933.601.440.54107232385183288319923.601.320.54113261373179278019914.021.320.54115258353169254319903.241.260.54110247318165235719893.121.140.48109245309151209419883.120.960.4886203284139178419872.880.960.4887196252140150619862.680.820.4086191232130132019853.690.740.3992198213115125319843.690.620.3880200225106120719833.980.620.4180201222102134319824.040.600.385315324354135619813.760.710.437618025488128719803.520.670.387017224882103819792.470.660.39742419094219784.130.660.40571382297489419772.470.620.408018825074847
+Source for Table 4.1.1 : “Your Driving Costs” by American Automobile Association, Compiled by  Runzheimer International 
+
+Notes for Table 4.1.1: 	
+1) Insurance figures based on: personal use vehicle, < 10 mile (16 km) commute, no young drivers
+2) Depreciation Costs - difference between amount paid and projected trade in value divided by the number of years planning to keep the car (10 or 12 years)
+3) National average per mile costs for an intermediate automobile (Taurus/Celebrity V6)
+4) Fire and Theft - $50 deductible in ‘77, $100 until 1992 and $250 in 1993
+5) Collision - $100 deductible in ‘77, $250 until 1992 and $500 in 1993
+6) Property Damage  and Liability Coverage - $100,000 / $300,000
+7) Uncorrected US Dollars and Cents
+8) 6 Cylinder (Ford Taurus/Chevy Celebrity or similar);
+
+

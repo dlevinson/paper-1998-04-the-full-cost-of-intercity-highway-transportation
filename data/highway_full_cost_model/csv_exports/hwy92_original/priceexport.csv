@@ -1,0 +1,60 @@
+State,Pl  Goverment Salary (1993),Pl,Pk Moody's Bond Rating,,Pm Bituminous Concrete (1993),,Excavation (1993),Reinforced Steel (1993),Structural Steel (1993),Structural Concrete (1993),,,PGOVSAL94,,,,,
+Alabama,25028,=+B2/$B$54,  AA,"=VLOOKUP(D2,$P$2:$Q$9,2,TRUE())",25.49,=+F2/F$54,1.6,0.419,0.862,217.9,,,26376,,   A,0.0555,,  AA
+Alaska,37943,=+B3/$B$54,  AA,"=VLOOKUP(D3,$P$2:$Q$9,2,TRUE())",31.89,=+F3/F$54,1.89,0.464,1.161,855.03,,,38889,,   X,0.0525,,  AA
+Arizona,24995,=+B4/$B$54,   X,"=VLOOKUP(D4,$P$2:$Q$9,2,TRUE())",22.42,=+F4/F$54,5.21,0.354,1.62,206.73,,,25906,,  A1,0.0535,,   X
+Arkansas,22793,=+B5/$B$54,  AA,"=VLOOKUP(D5,$P$2:$Q$9,2,TRUE())",26.28,=+F5/F$54,1.31,0.544,0.674,259.97,,,23336,,  AA,0.0515,,  AA
+California,33080,=+B6/$B$54,  A1,"=VLOOKUP(D6,$P$2:$Q$9,2,TRUE())",28.79,=+F6/F$54,3.15,0.414,1.07,256.86,,,33795,, AA1,0.0495,,  A1
+Colorado,27380,=+B7/$B$54,   X,"=VLOOKUP(D7,$P$2:$Q$9,2,TRUE())",28.35,=+F7/F$54,2.48,0.362,0.79,201.17,,,28148,, AAA,0.0475,,   X
+Connecticut,35320,=+B8/$B$54,  AA,"=VLOOKUP(D8,$P$2:$Q$9,2,TRUE())",32.4,=+F8/F$54,5.33,0.631,0.887,336.99,,,36143,, BBB,0.0595,,  AA
+Delaware,28593,=+B9/$B$54, AA1,"=VLOOKUP(D9,$P$2:$Q$9,2,TRUE())",26.85,=+F9/F$54,3.4,0.632,0.632,261.13,,,29298,,BBA1,0.0575,, AA1
+Dist.  of  Col.,43855,=+B10/$B$54,   X,"=VLOOKUP(D10,$P$2:$Q$9,2,TRUE())",54.49,=+F10/F$54,10.13,0.488,0.898,616,,,46872,,,,,   X
+Florida,27116,=+B11/$B$54,  AA,"=VLOOKUP(D11,$P$2:$Q$9,2,TRUE())",19.02,=+F11/F$54,2.51,0.377,0.66,320.1,,,27315,,,,,  AA
+Georgia,24431,=+B12/$B$54, AAA,"=VLOOKUP(D12,$P$2:$Q$9,2,TRUE())",30.47,=+F12/F$54,2.14,0.399,0.868,308.24,,,24890,,,,, AAA
+Hawaii,30420,=+B13/$B$54,  AA,"=VLOOKUP(D13,$P$2:$Q$9,2,TRUE())",65.14,=+F13/F$54,18.58,0.585,0.585,616.43,,,31136,,,,,  AA
+Idaho,22276,=+B14/$B$54,   X,"=VLOOKUP(D14,$P$2:$Q$9,2,TRUE())",21.82,=+F14/F$54,2.79,0.482,0.714,242.58,,,23261,,,,,   X
+Illinois,29712,=+B15/$B$54,  A1,"=VLOOKUP(D15,$P$2:$Q$9,2,TRUE())",29.97,=+F15/F$54,4.26,0.605,0.868,387.64,,,30507,,,,,  A1
+Indiana,25309,=+B16/$B$54,   X,"=VLOOKUP(D16,$P$2:$Q$9,2,TRUE())",22.9,=+F16/F$54,6.97,0.474,0.811,295.89,,,25876,,,,,
+Iowa,24183,=+B17/$B$54,   X,"=VLOOKUP(D17,$P$2:$Q$9,2,TRUE())",22.93,=+F17/F$54,2.17,0.43,0.782,242.23,,,24735,,,,,
+Kansas,22923,=+B18/$B$54,   X,"=VLOOKUP(D18,$P$2:$Q$9,2,TRUE())",24.42,=+F18/F$54,2.15,0.553,0.755,279.65,,,23243,,,,,
+Kentucky,23908,=+B19/$B$54,  AA,"=VLOOKUP(D19,$P$2:$Q$9,2,TRUE())",28.41,=+F19/F$54,7.43,0.513,0.792,307.8,,,24444,,,,,
+Louisiana,22383,=+B20/$B$54,BAA1,"=VLOOKUP(D20,$P$2:$Q$9,2,TRUE())",28.62,=+F20/F$54,5.79,0.325,0.685,215.76,,,22775,,,,,
+Maine,24466,=+B21/$B$54,  AA,"=VLOOKUP(D21,$P$2:$Q$9,2,TRUE())",24.53,=+F21/F$54,4.24,0.811,0.806,300.09,,,25076,,,,,
+Maryland,32930,=+B22/$B$54, AAA,"=VLOOKUP(D22,$P$2:$Q$9,2,TRUE())",26.2,=+F22/F$54,2.48,0.505,0.808,286.69,,,34052,,,,,
+Massachusetts,31609,=+B23/$B$54,  A1,"=VLOOKUP(D23,$P$2:$Q$9,2,TRUE())",28.96,=+F23/F$54,3.17,0.719,0.683,93.8,,,33039,,,,,
+Michigan,30074,=+B24/$B$54,  A1,"=VLOOKUP(D24,$P$2:$Q$9,2,TRUE())",26.64,=+F24/F$54,3.23,0.557,1.1,268.24,,,30740,,,,,
+Minnesota,28052,=+B25/$B$54, AA1,"=VLOOKUP(D25,$P$2:$Q$9,2,TRUE())",19.28,=+F25/F$54,1.58,0.447,0.825,150.76,,,28807,,,,,
+Mississippi,20777,=+B26/$B$54,  AA,"=VLOOKUP(D26,$P$2:$Q$9,2,TRUE())",29.17,=+F26/F$54,1.65,0.334,0.74,211.04,,,21643,,,,,
+Missouri,24807,=+B27/$B$54, AAA,"=VLOOKUP(D27,$P$2:$Q$9,2,TRUE())",23.54,=+F27/F$54,2.57,0.606,0.771,317.83,,,25475,,,,,
+Montana ,23744,=+B28/$B$54,  AA,"=VLOOKUP(D28,$P$2:$Q$9,2,TRUE())",23.74,=+F28/F$54,3.21,0.513,0.655,238.51,,,24180,,,,,
+Nebraska,23214,=+B29/$B$54,   X,"=VLOOKUP(D29,$P$2:$Q$9,2,TRUE())",22.21,=+F29/F$54,2.03,0.781,0.635,304.88,,,23698,,,,,
+Nevada,30929,=+B30/$B$54,  AA,"=VLOOKUP(D30,$P$2:$Q$9,2,TRUE())",20.67,=+F30/F$54,3.33,0.478,0.994,236.94,,,31617,,,,,
+New  Hampshire,26304,=+B31/$B$54,  AA,"=VLOOKUP(D31,$P$2:$Q$9,2,TRUE())",26.4,=+F31/F$54,3.09,0.482,1.115,209.89,,,27116,,,,,
+New  Jersey,35532,=+B32/$B$54, AA1,"=VLOOKUP(D32,$P$2:$Q$9,2,TRUE())",27.28,=+F32/F$54,7.11,0.75,1.175,320.62,,,37039,,,,,
+New  Mexico,25083,=+B33/$B$54, AA1,"=VLOOKUP(D33,$P$2:$Q$9,2,TRUE())",22.47,=+F33/F$54,2.68,0.592,2.241,298.37,,,26013,,,,,
+New  York,33575,=+B34/$B$54,   A,"=VLOOKUP(D34,$P$2:$Q$9,2,TRUE())",29.27,=+F34/F$54,4.76,0.727,0.978,426.54,,,34776,,,,,
+North  Carolina,24581,=+B35/$B$54, AAA,"=VLOOKUP(D35,$P$2:$Q$9,2,TRUE())",25.82,=+F35/F$54,1.92,0.448,0.826,250.09,,,25105,,,,,
+North  Dakota,21716,=+B36/$B$54,  AA,"=VLOOKUP(D36,$P$2:$Q$9,2,TRUE())",53.34,=+F36/F$54,1.02,0.581,2.157,328.51,,,22248,,,,,
+Ohio,27157,=+B37/$B$54,  AA,"=VLOOKUP(D37,$P$2:$Q$9,2,TRUE())",22.5,=+F37/F$54,3.66,0.467,0.704,269.34,,,27951,,,,,
+Oklahoma,23145,=+B38/$B$54,  AA,"=VLOOKUP(D38,$P$2:$Q$9,2,TRUE())",27.52,=+F38/F$54,2.16,0.467,1.126,213.21,,,23594,,,,,
+Oregon,27778,=+B39/$B$54,  AA,"=VLOOKUP(D39,$P$2:$Q$9,2,TRUE())",27.54,=+F39/F$54,7.14,0.456,0.665,252.68,,,28609,,,,,
+Pennsylvania,29870,=+B40/$B$54,  A1,"=VLOOKUP(D40,$P$2:$Q$9,2,TRUE())",30.46,=+F40/F$54,3.7,0.634,0.998,317.11,,,30653,,,,,
+Rhode  Island,31024,=+B41/$B$54,  A1,"=VLOOKUP(D41,$P$2:$Q$9,2,TRUE())",31.17,=+F41/F$54,3.35,0.483,0.885,247.97,,,31778,,,,,
+South  Carolina,24142,=+B42/$B$54, AAA,"=VLOOKUP(D42,$P$2:$Q$9,2,TRUE())",24.89,=+F42/F$54,2.66,0.443,0.851,218.8,,,24336,,,,,
+South  Dakota,21562,=+B43/$B$54,   X,"=VLOOKUP(D43,$P$2:$Q$9,2,TRUE())",12.8,=+F43/F$54,1.22,0.47,0.47,204.59,,,22336,,,,,
+Tennessee,24812,=+B44/$B$54, AAA,"=VLOOKUP(D44,$P$2:$Q$9,2,TRUE())",22.78,=+F44/F$54,1.93,0.443,0.834,220.25,,,25975,,,,,
+Texas,24957,=+B45/$B$54,  AA,"=VLOOKUP(D45,$P$2:$Q$9,2,TRUE())",31.76,=+F45/F$54,2.66,0.322,0.748,221.41,,,25297,,,,,
+Utah,24221,=+B46/$B$54, AAA,"=VLOOKUP(D46,$P$2:$Q$9,2,TRUE())",24.44,=+F46/F$54,2.63,0.466,1.481,208.36,,,25060,,,,,
+Vermont,24989,=+B47/$B$54,  AA,"=VLOOKUP(D47,$P$2:$Q$9,2,TRUE())",32.83,=+F47/F$54,2.13,0.491,0.82,263.2,,,25253,,,,,
+Virginia,29028,=+B48/$B$54, AAA,"=VLOOKUP(D48,$P$2:$Q$9,2,TRUE())",25.33,=+F48/F$54,2.72,0.495,0.795,269.71,,,29528,,,,,
+Washington,29721,=+B49/$B$54,  AA,"=VLOOKUP(D49,$P$2:$Q$9,2,TRUE())",28.29,=+F49/F$54,2.37,0.524,0.976,306.82,,,30132,,,,,
+West  Virginia,23614,=+B50/$B$54,  A1,"=VLOOKUP(D50,$P$2:$Q$9,2,TRUE())",26.51,=+F50/F$54,3.04,0.535,0.961,305.65,,,23939,,,,,
+Wisconsin,27228,=+B51/$B$54,  AA,"=VLOOKUP(D51,$P$2:$Q$9,2,TRUE())",2.08,=+F51/F$54,1.65,0.44,1.083,171.78,,,27826,,,,,
+Wyoming,23275,=+B52/$B$54,   X,"=VLOOKUP(D52,$P$2:$Q$9,2,TRUE())",18.08,=+F52/F$54,1.26,0.555,0.555,268,,,23522,,,,,
+,,=+B53/$B$54,,"=VLOOKUP(D53,$P$2:$Q$9,2,TRUE())",,=+F53/F$54,,,,,,,,,,,,
+Average,=AVERAGE(B2:B52),=+B54/$B$54,AA,"=VLOOKUP(D54,$P$2:$Q$9,2,TRUE())",18.81,=+F54/F$54,2.5,0.467,0.861,261.89,,,,,,,,
+"Average Price of Bituminous Concrete (Contract Price per Ton) p.7 (TE183.U5) ""Price Trends for Federal Aid Highway Construction, Fourth Quarter 1993",,,,,,,,,,,,,,,,,,
+"Average Price of Common Excavation (Contract Price per cu yd) p.7 (TE183.U5) ""Price Trends for Federal Aid Highway Construction, Fourth Quarter 1993",,,,,,,,,,,,,,,,,,
+"Average Price of Reinforcing Steel (Contract Price per lb) p.7 (TE183.U5) ""Price Trends for Federal Aid Highway Construction, Fourth Quarter 1993",,,,,,,,,,,,,,,,,,
+"Average Price of Structural Concrete (Contract Price per cu yd) p.7 (TE183.U5) ""Price Trends for Federal Aid Highway Construction, Fourth Quarter 1993",,,,,,,,,,,,,,,,,,
+"Govt Salaries from BLS:.  State and industry average annual pay for 1993 and 1994, press release Tuesday Sept. 19, 1995",,,,,,,,,,,,,,,,,,
+Technical information:  (202) 606-6567         USDL 95-376,,,,,,,,,,,,,,,,,,

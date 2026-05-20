@@ -1,0 +1,103 @@
+compute TOTEXP = 1000*HIGHWAY*IRATE+MNTRI+MNTRL+MNTUI+MNTUL+ADM_MISC+LAW_SAFE.
+
+compute LNTOTEXP=LN(TOTEXP).
+
+* TOTAL.
+
+regression variables= TOTEXP
+The raw data or transformation pass is proceeding  
+     51 cases are written to the compressed active file.
+   MILRI MILRL MILUI MILUL
+   RMILgt4 UMILgt4
+   RTRUCOM RTRUSING UTRUCOMB UTRUSING
+   NEWYORK CALIFORN SOUTHEAS MIDWEST NORTHEAS ALASKA
+   VMTRI VMTRL VMTUI VMTUL
+  /dependent=TOTEXP
+  /method=enter.
+-------------------------------------------------------------------------------
+Page  47                          SPSS/PC+                              9/19/95
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+
+Listwise Deletion of Missing Data
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+Block Number  1.  Method:  Enter
+-------------------------------------------------------------------------------
+Page  48                          SPSS/PC+                              9/19/95
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+
+Variable(s) Entered on Step Number
+   1..    VMTUL
+   2..    NORTHEAS
+   3..    RTRUSING
+   4..    UTRUCOMB
+   5..    MIDWEST
+   6..    NEWYORK
+   7..    ALASKA
+   8..    CALIFORN
+   9..    RTRUCOM
+  10..    UTRUSING
+  11..    SOUTHEAS
+  12..    MILRL
+  13..    RMILGT4
+  14..    MILRI
+  15..    VMTRL
+  16..    UMILGT4
+  17..    VMTRI
+  18..    MILUI
+  19..    VMTUI
+  20..    MILUL
+-------------------------------------------------------------------------------
+Page  49                          SPSS/PC+                              9/19/95
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+
+Multiple R           .98511
+R Square             .97044
+Adjusted R Square    .94679
+Standard Error 189004.42042
+
+Analysis of Variance
+                    DF      Sum of Squares      Mean Square
+Regression          20 29316969288956.8000 1465848464447.84
+Residual            25  893066773498.27456 35722670939.9310
+
+F =      41.03412       Signif F =  .0000
+
+
+------------------ Variables in the Equation ------------------
+
+Variable              B        SE B       Beta         T  Sig T
+
+RTRUCOM    -1149.119728 6185.707181   -.011217     -.186  .8541
+UTRUSING    1455.620083 6237.502797    .013404      .233  .8174
+RTRUSING   -4584.537892 6690.361804   -.047497     -.685  .4995
+UTRUCOMB     750.371929 12396.85165    .003722      .061  .9522
+NORTHEAS   297090.36666 138776.4955    .138954     2.141  .0422
+MIDWEST    167512.91152 120160.1880    .085260     1.394  .1756
+NEWYORK    519688.13144 325220.2216    .093518     1.598  .1226
+ALASKA     -216825.6225 318465.9440   -.039018     -.681  .5022
+CALIFORN   1036175.2939 1302762.254    .186460      .795  .4339
+SOUTHEAS   166765.16790 118223.7229    .096467     1.411  .1707
+VMTRI        -66.916739   48.509485   -.266491    -1.379  .1800
+VMTRL         -5.431273   15.109168   -.068527     -.359  .7223
+VMTUI        -41.325567   67.558337   -.441632     -.612  .5463
+VMTUL         12.845156   11.292086    .349729     1.138  .2661
+UMILGT4    -1888.540561 1230.216320   -.392971    -1.535  .1373
+RMILGT4     4410.252571 1994.047982    .279972     2.212  .0364
+MILRL          3.830809   16.912525    .192548      .227  .8226
+MILRI        403.110883  240.937822    .201774     1.673  .1068
+MILUI       4081.601492 1527.400673   1.235077     2.672  .0131
+MILUL         -1.991679   15.833994   -.129435     -.126  .9009
+(Constant) -153730.3012 153958.8052                -.999  .3276
+

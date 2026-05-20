@@ -1,0 +1,187 @@
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+
+Listwise Deletion of Missing Data
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+Block Number  1.  Method:  Enter
+-------------------------------------------------------------------------------
+Page   8                          SPSS/PC+                             10/2/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+
+Variable(s) Entered on Step Number
+   1..    UVC
+   2..    RTRUC
+   3..    UCAR
+   4..    RTRUS
+   5..    RVC
+   6..    UTRUC
+   7..    RCAR
+   8..    UTRUS
+-------------------------------------------------------------------------------
+Page   9                          SPSS/PC+                             10/2/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+
+
+Multiple R           .94335
+R Square             .88991
+Adjusted R Square    .86400
+Standard Error 350917.97625
+
+Analysis of Variance
+                    DF      Sum of Squares      Mean Square
+Regression           8 33842923477089.3320 4230365434636.17
+Residual            34 4186876485848.70560 123143426054.374
+
+F =      34.35316       Signif F =  .0000
+-------------------------------------------------------------------------------
+Page  10                          SPSS/PC+                             10/2/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+
+------------------ Variables in the Equation ------------------
+
+Variable              B        SE B       Beta         T  Sig T
+
+UVC        301275.73457 669129.7441    .108041      .450  .6554
+RTRUC         25.354441   49.738620    .070225      .510  .6135
+UCAR           5.050815    5.085772    .165452      .993  .3277
+RTRUS        -39.828690   70.708801   -.098654     -.563  .5769
+RVC        -598990.1143 723467.7781   -.143151     -.828  .4135
+UTRUC        133.110104   87.971341    .268227     1.513  .1395
+RCAR          19.274855   19.494744    .178337      .989  .3298
+UTRUS         72.823605   41.307162    .405318     1.763  .0869
+(Constant) 289176.59080 171130.0701                1.690  .1002
+
+
+End Block Number   1   All requested variables entered.
+-------------------------------------------------------------------------------
+Page  11                          SPSS/PC+                             10/2/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+
+Residuals Statistics:
+
+                   Min           Max         Mean     Std Dev   N
+
+*PRED      180177.7031  4212162.5000 1119811.8726 897654.6621  43
+*RESID    -763071.5000   980301.0000        .0000 315733.3295  43
+*ZPRED         -1.0468        3.4449        .0000      1.0000  43
+*ZRESID        -2.1745        2.7935        .0000       .8997  43
+
+Total Cases =       48
+-------------------------------------------------------------------------------
+Page  12                          SPSS/PC+                             10/2/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+
+
+From Equation   1:   1 new variables have been created.
+
+  Name       Contents
+  ----       --------
+
+  RESID3      Residual
+-------------------------------------------------------------------------------
+Page  13                          SPSS/PC+                             10/2/95 
+
+This procedure was completed at 11:27:24
+
+compute wres = 1/(resid3*resid3).
+
+regression variables= TOTEXP rcar ucar utruc utrus rtruc rtrus rvc uvc
+The raw data or transformation pass is proceeding  
+     48 cases are written to the compressed active file.
+   /regwgt wres
+   /dependent = TOTEXP
+   /method=enter.
+-------------------------------------------------------------------------------
+Page  14                          SPSS/PC+                             10/2/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+
+Listwise Deletion of Missing Data
+
+Weighted Least Squares -  Weighted By..    WRES
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+Block Number  1.  Method:  Enter
+-------------------------------------------------------------------------------
+Page  15                          SPSS/PC+                             10/2/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+
+Variable(s) Entered on Step Number
+   1..    UVC
+   2..    RCAR
+   3..    RTRUC
+   4..    UTRUC
+   5..    RTRUS
+   6..    UTRUS
+   7..    UCAR
+   8..    RVC
+-------------------------------------------------------------------------------
+Page  16                          SPSS/PC+                             10/2/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+
+
+Multiple R           .99771
+R Square             .99542
+Adjusted R Square    .99434
+Standard Error      1.04222
+
+Analysis of Variance
+                    DF      Sum of Squares      Mean Square
+Regression           8          8024.54582       1003.06823
+Residual            34            36.93128          1.08621
+
+F =     923.45362       Signif F =  .0000
+-------------------------------------------------------------------------------
+Page  17                          SPSS/PC+                             10/2/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   TOTEXP
+
+
+------------------ Variables in the Equation ------------------
+
+Variable              B        SE B       Beta         T  Sig T
+
+UVC        311966.26480 87064.82105    .450895     3.583  .0011
+RCAR          16.879110    3.732586    .246436     4.522  .0001
+RTRUC         20.964508   12.883621    .050337     1.627  .1129
+UTRUC        129.973571   14.191352    .259143     9.159  .0000
+RTRUS        -29.402065   12.595549   -.090310    -2.334  .0256
+UTRUS         72.587723    6.233188    .977451    11.645  .0000
+UCAR           6.237841    2.375964    .192530     2.625  .0129
+RVC        -628059.2169 136521.1909   -.687609    -4.600  .0001
+(Constant) 298299.18635 26474.83547               11.267  .0000
+

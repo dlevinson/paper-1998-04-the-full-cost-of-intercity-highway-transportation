@@ -1,0 +1,59 @@
+Multiple-R	.97074
+R-Square	.94233
+Adjusted-R-Square	.93216
+Standard-Error	.22339
+
+Analysis of Variance
+	DF	Sum-of-Squares	Mean-Square
+Regression	6	27.72708	4.62118
+Residual	34	1.69677	.04990
+
+F	=	92.59963	Signif	F	=	.0000
+
+------------------	Variables	in	the	Equation	------------------
+
+Variable	B	SE	B	Beta	T	Sig	T
+
+LNPk	1.992169	.521143	.161935	3.823	.0005
+LNPl	.494536	.372093	.081089	1.329	.1927
+LNPm	-.016939	.080218	-.008844	-.211	.8340
+LNYa	.481381	.104233	.576816	4.618	.0001
+LNYc	.155522	.086340	.190284	1.801	.0805
+LNYs	.199068	.090394	.215236	2.202	.0345
+(Constant)	11.738659	1.557675	7.536	.0000
+
+Residuals	Statistics:
+
+	Min	Max	Mean	Std-Dev	N
+
+*PRED	12.1196	15.4688	13.6682	.8326	41
+*RESID	-.3524	.3543	.0000	.2060	41
+*ZPRED	-1.8600	2.1627	.0000	1.0000	41
+*ZRESID	-1.5776	1.5860	.0000	.9220	41
+
+Total	Cases	=	41
+
+
+Multiple-R	.99799
+R-Square	.99598
+Adjusted-R-Square	.99527
+Standard-Error	.99311
+
+Analysis of Variance
+
+	DF	Sum-of-Squares	Mean-Square
+Regression	6	8299.15090	1383.19182
+Residual	34	33.53323	.98627
+
+F	=	1402.44536	Signif	F	=	.0000
+
+Variable	B	SE-B	Beta	T	Sig-T
+
+LNPk	1.831407	.162832	.126203	11.247	.0000
+LNPl	.786103	.234942	.121752	3.346	.0020
+LNPm	.004942	.022269	.002636	.222	.8257
+LNYa	.439197	.044709	.551639	9.824	.0000
+LNYc	.225037	.044866	.200160	5.016	.0000
+LNYs	.179319	.036711	.170755	4.885	.0000
+(Constant)	11.280739	.562629	20.050	.0000
+

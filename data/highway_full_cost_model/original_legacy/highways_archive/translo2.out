@@ -1,0 +1,112 @@
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   LNTOTEXP
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   LNTOTEXP
+
+
+Multiple R           .96819
+R Square             .93740
+Adjusted R Square    .88049
+Standard Error       .28722
+
+Analysis of Variance
+                    DF      Sum of Squares      Mean Square
+Regression          20            27.17683          1.35884
+Residual            22             1.81487           .08249
+
+F =      16.47197       Signif F =  .0000
+-------------------------------------------------------------------------------
+Page  21                          SPSS/PC+                             10/9/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   LNTOTEXP
+
+
+------------------ Variables in the Equation ------------------
+
+Variable              B        SE B       Beta         T  Sig T
+
+IMM             .067663     .218818   1.584598      .309  .7601
+LNPURB        -5.507728    8.612437  -2.451293     -.640  .5291
+LNSING         9.046600    7.985011  11.039558     1.133  .2694
+IAA             .087469     .517532   2.152965      .169  .8673
+LNCOMB        -8.164275    8.789980  -8.848201     -.929  .3631
+IPP             .183664    2.139434    .138960      .086  .9324
+ISP            1.731105    2.849777   5.468805      .607  .5498
+IAP             .196108    1.842957    .709709      .106  .9162
+ICC            -.349352    1.257933  -6.092052     -.278  .7838
+IPM             .217610     .992942   1.115042      .219  .8285
+ICP           -1.589184    3.110745  -5.031516     -.511  .6145
+LNMILES         .018488    3.654934    .019614      .005  .9960
+ISM            -.202669    1.085833  -4.044567     -.187  .8536
+ISS            -.149912     .717443  -3.089713     -.209  .8364
+LNAUTO         1.245344    4.426512   1.539298      .281  .7811
+IAM            -.089465     .567185  -1.948075     -.158  .8761
+IAS            -.764307    1.102891 -16.618122     -.693  .4956
+ICM             .163757    1.331194   3.091048      .123  .9032
+IAC             .623826    1.380315  12.507835      .452  .6557
+ICS             .581114    1.713237  10.874650      .339  .7377
+(Constant)    -4.269297   14.251614                -.300  .7673
+
+
+End Block Number   1   All requested variables entered.
+-------------------------------------------------------------------------------
+Page  23                          SPSS/PC+                             10/9/95 
+
+This procedure was completed at 17:37:58
+
+
+
+regression variables= lntotexp lnauto lncomb lnsing lnpurb
+   iaa iac ias iap icc ics icp iss isp ipp
+  /CRITERIA TOLERANCE (0.0000001)
+
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   LNTOTEXP
+
+
+
+Multiple R           .96535
+R Square             .93190
+Adjusted R Square    .89785
+Standard Error       .26555
+
+Analysis of Variance
+                    DF      Sum of Squares      Mean Square
+Regression          14            27.01729          1.92981
+Residual            28             1.97441           .07051
+
+F =      27.36741       Signif F =  .0000
+-------------------------------------------------------------------------------
+Page  29                          SPSS/PC+                             10/9/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   LNTOTEXP
+
+
+------------------ Variables in the Equation ------------------
+
+Variable              B        SE B       Beta         T  Sig T
+
+IPP            -.038086     .929824   -.028816     -.041  .9676
+LNCOMB        -6.009202    6.962836  -6.512596     -.863  .3954
+IAA             .055253     .335840   1.359996      .165  .8705
+IAP             .431331    1.038551   1.560970      .415  .6811
+LNSING         6.750644    6.605806   8.237805     1.022  .3156
+ISP            1.415725    2.046010   4.472475      .692  .4947
+ICC            -.296461     .826808  -5.169718     -.359  .7226
+LNPURB        -5.572081    6.209196  -2.479934     -.897  .3772
+ICP           -1.286949    2.129011  -4.074610     -.604  .5504
+ISS             .072625     .487897   1.496805      .149  .8827
+LNAUTO         1.315545    3.772943   1.626069      .349  .7299
+IAS            -.939360     .746493 -20.424250    -1.258  .2187
+IAC             .775185    1.015591  15.542627      .763  .4517
+ICS             .299745    1.190931   5.609257      .252  .8031
+(Constant)    -3.091322   11.552592                -.268  .7910

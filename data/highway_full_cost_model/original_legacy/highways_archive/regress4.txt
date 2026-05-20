@@ -1,0 +1,178 @@
+           SPSS/PC+ The Statistical Package for IBM PC                  9/19/95
+
+get file='C:\HIGHWAYS\HIGHWAY3.X'.
+The SPSS/PC+ system file is read from
+    file C:\HIGHWAYS\HIGHWAY3.X                                         
+The file was created on  9/19/95 at 14:58:45
+and is titled                        SPSS/PC+                                 
+The SPSS/PC+ system file contains
+     51 cases, each consisting of 
+     76 variables (including system variables).
+     76 variables will be used in this session.
+-------------------------------------------------------------------------------
+Page   2                          SPSS/PC+                              9/19/95
+
+This procedure was completed at 15:21:29
+
+select if (YEAR > 0).
+
+compute IRATE=0.07.
+
+compute MILRLSQ = MILRL * MILRL.
+
+compute HIGHINF = 1.2 * HIGHWAY.
+
+compute TOTEXP = 1000*HIGHINF*IRATE+MNTRI+MNTRL+MNTUI+MNTUL+ADM_MISC+LAW_SAFE.
+
+compute LNTOTEXP=LN(TOTEXP).
+
+compute LNVMTRI=LN(VMTRI).
+
+compute LNVMTRL=LN(VMTRL).
+
+compute LNVMTUI=LN(VMTUI).
+
+compute LNVMTUL=LN(VMTUL).
+
+compute LNMILRI=LN(MILRI).
+
+compute LNMILRL=LN(MILRL).
+
+compute LNMILUI=LN(MILUI).
+
+compute LNMILUL=LN(MILUL).
+
+compute VMTTOT=VMTRI+VMTRL+VMTUI+VMTUL.
+
+compute MILETOT=MILRI+MILRL+MILUI+MILUL.
+
+compute VMRI = VMTRI/MILRI.
+
+compute VMRL = VMTRL/MILRL.
+
+compute VMUI = VMTUI/MILUI.
+
+compute VMUL = VMTUL/MILUL.
+
+* TOTAL.
+
+*regression variables= TOTEXP VMTTOT MILETOT
+*  /dependent=TOTEXP
+*  /method=enter.
+
+regression variables= LNTOTEXP
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+
+Listwise Deletion of Missing Data
+
+Equation Number 1    Dependent Variable..   LNTOTEXP
+
+Block Number  1.  Method:  Enter
+-------------------------------------------------------------------------------
+Page   7                          SPSS/PC+                              9/19/95
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   LNTOTEXP
+
+
+Variable(s) Entered on Step Number
+   1..    LNVMTUL
+   2..    LNMILRL
+   3..    LNMILRI
+   4..    LNVMTRL
+   5..    LNMILUI
+   6..    LNVMTRI
+   7..    LNVMTUI
+   8..    LNMILUL
+-------------------------------------------------------------------------------
+Page   8                          SPSS/PC+                              9/19/95
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   LNTOTEXP
+
+
+
+Multiple R           .96582
+R Square             .93280
+Adjusted R Square    .91651
+Standard Error       .23484
+
+Analysis of Variance
+                    DF      Sum of Squares      Mean Square
+Regression           8            25.26291          3.15786
+Residual            33             1.81996           .05515
+
+F =      57.25911       Signif F =  .0000
+-------------------------------------------------------------------------------
+Page   9                          SPSS/PC+                              9/19/95
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   LNTOTEXP
+
+
+------------------ Variables in the Equation ------------------
+
+Variable              B        SE B       Beta         T  Sig T
+
+LNVMTUL        -.103410     .243071   -.151307     -.425  .6733
+LNMILRL       -1.044873     .467593  -1.185720    -2.235  .0323
+LNMILRI         .351769     .239290    .343803     1.470  .1510
+LNVMTRL         .599309     .245370    .611003     2.442  .0201
+LNMILUI         .284835     .219408    .322739     1.298  .2032
+LNVMTRI        -.287169     .279404   -.278254    -1.028  .3115
+LNVMTUI         .111856     .189039    .193670      .592  .5581
+LNMILUL        1.136301     .489906   1.055971     2.319  .0267
+(Constant)     5.409044    1.027419                5.265  .0000
+
+
+End Block Number   1   All requested variables entered.
+-------------------------------------------------------------------------------
+Page  10                          SPSS/PC+                              9/19/95
+
+This procedure was completed at 15:23:41
+
+*   VMRI VMRL VMUI VMUL
+*   RTRUCOM RTRUSING UTRUCOMB UTRUSING
+*   NEWYORK CALIFORN SOUTHEAS MIDWEST NORTHEAS ALASKA
+*   RMILgt4 UMILgt4
+
+* MAINT RURAL INTERSTATE.
+*
+*regression variables= MNTRI MILRI RMILgt4 RTRUCOM RTRUSING MILRISQ
+*   NEWYORK CALIFORN SOUTHEAS MIDWEST NORTHEAS ALASKA VMTRI
+*  /dependent=MNTRI
+*  /method=enter.
+*
+* CAPITAL RURAL INTERSTATE.
+*
+*regression variables= CAPRI MILRI RMILgt4 RTRUCOM RTRUSING MILRISQ
+*   NEWYORK CALIFORN SOUTHEAS MIDWEST NORTHEAS ALASKA VMTRI
+*  /dependent=CAPRI
+*  /method=enter.
+*
+**MAINT RURAL LOCAL.
+*
+*regression variables= MNTRL MILRL RMILgt4 RTRUCOM RTRUSING MILRLSQ
+*   NEWYORK CALIFORN SOUTHEAS MIDWEST NORTHEAS ALASKA VMTRL
+*  /dependent=MNTRL
+*  /method=enter.
+*
+** CAPITAL RURAL LOCAL.
+*
+*regression variables= CAPRL MILRL RMILgt4 RTRUCOM RTRUSING MILRLSQ
+*   NEWYORK CALIFORN SOUTHEAS MIDWEST NORTHEAS ALASKA VMTRL
+*  /dependent=CAPRL
+*  /method=enter.
+******
+
+-------------------------------------------------------------------------------
+Page  12                          SPSS/PC+                              9/19/95
+
+FINISH.
+
+End of Include file.

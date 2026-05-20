@@ -1,0 +1,322 @@
+           SPSS/PC+ The Statistical Package for IBM PC                 10/9/95 
+
+get file='C:\HIGHWAYS\HIGHWAY3.X'.
+The SPSS/PC+ system file is read from
+    file C:\HIGHWAYS\HIGHWAY3.X                                         
+The file was created on  9/19/95 at 14:58:45
+and is titled                        SPSS/PC+                                 
+The SPSS/PC+ system file contains
+     51 cases, each consisting of 
+     76 variables (including system variables).
+     76 variables will be used in this session.
+-------------------------------------------------------------------------------
+Page   2                          SPSS/PC+                             10/9/95 
+
+This procedure was completed at 16:20:53
+
+select if (YEAR > 0).
+
+* Interest Rate, assume 7%
+
+compute IRATE=0.07.
+compute TOTCAP=CAPRI+CAPRL+CAPUI+CAPUL.
+compute MILRLSQ = MILRL * MILRL.
+* HIGHINF = Inflator 1988 to 1993 (assume 20%)
+compute HIGHINF = 1.2 * HIGHWAY.
+compute CAPNEW = 1000*HIGHINF*IRATE.
+compute TOTEXP = CAPNEW+MNTRI+MNTRL+MNTUI+MNTUL+ADM_MISC+LAW_SAFE.
+compute LNTOTEXP=LN(TOTEXP).
+compute LNVMTRI=LN(VMTRI).
+compute LNVMTRL=LN(VMTRL).
+compute LNVMTUI=LN(VMTUI+VMTUF).
+compute LNVMTUL=LN(VMTUL).
+compute LNMILRI=LN(MILRI).
+compute LNMILRL=LN(MILRL).
+compute LNMILUI=LN(MILUI+MILUF).
+compute LNMILUL=LN(MILUL).
+compute VMTTOT=VMTRI+VMTRL+VMTUI+VMTUL+VMTUF.
+compute MILETOT=MILRI+MILRL+MILUI+MILUL+MILUF.
+compute VCRI = (VMTRI/MILRI).
+compute VCRL = (VMTRL/MILRL).
+compute VCUI = ((VMTUI+VMTUF)/(MILUI+MILUF)).
+compute VCUL = (VMTUL/MILUL).
+compute LNVCRI = LN(VMTRI/MILRI).
+compute LNVCRL = LN(VMTRL/MILRL).
+compute LNVCUI = LN((VMTUI+VMTUF)/(MILUI+MILUF)).
+compute LNVCUL = LN(VMTUL/MILUL).
+compute LNRTRUC=LN((RTRUCOM/100)*(VMTRI+VMTRL)).
+compute LNUTRUC=LN((UTRUCOMB/100)*(VMTUI+VMTUF+VMTUL)).
+compute RTRUC=((RTRUCOM/100)*(VMTRI+VMTRL)).
+compute UTRUC=((UTRUCOMB/100)*(VMTUI+VMTUF+VMTUL)).
+compute RTRUS=((RTRUSING/100)*(VMTRI+VMTRL)).
+compute UTRUS=((UTRUSING/100)*(VMTUI+VMTUF+VMTUL)).
+compute RCAR=((RPASSVEH/100)*(VMTRI+VMTRL)).
+compute UCAR=((UPASSVEH/100)*(VMTUI+VMTUF+VMTUL)).
+compute lnrmgt4=LN(RMILGT4).
+compute lnrmle4=LN(RMILLE4).
+compute lnumgt4=LN(UMILGT4).
+compute lnumle4=LN(UMILLE4).
+compute miles = milri+milrl+milui+miluf+milul.
+compute traffic= utruc+rtruc+utrus+rtrus+ucar+rcar.
+compute purbmil= (milui+miluf+milul)/(milri+milrl+milui+miluf+milul).
+compute purbtraf= (utruc+utrus+ucar)/(utruc+rtruc+utrus+rtrus+ucar+rcar).
+compute urbtraf= (utruc+utrus+ucar).
+compute ptruck= 1-(ucar+rcar)/(utruc+rtruc+utrus+rtrus+ucar+rcar).
+compute truck= utruc+rtruc+utrus+rtrus.
+compute miles2=miles*miles.
+compute traffic2=traffic*traffic.
+compute comb=utruc+rtrus.
+compute lntotexp=ln(totexp).
+compute lnauto=ln(auto).
+compute lncomb=ln(comb).
+compute lnsing=ln(sing).
+compute lnpurb=ln(purbtraf).
+compute lnmiles=ln(miles).
+compute iaa=lnauto*lnauto.
+compute iac=lnauto*lncomb.
+compute ias=lnauto*lnsing.
+compute iap=lnauto*lnpurb.
+compute iam=lnauto*lnmiles.
+compute icc=lncomb*lncomb.
+compute ics=lncomb*lnsing.
+compute icp=lncomb*lnpurb.
+compute icm=lncomb*lnmiles.
+compute iss=lnsing*lnsing.
+compute isp=lnsing*lnpurb.
+compute ism=lnsing*lnmiles.
+compute ipp=lnpurb*lnpurb.
+compute ipm=lnpurb*lnmiles.
+compute imm=lnmiles*lnmiles.
+
+regression variables= lntotexp lnauto lncomb lnsing lnpurb lnmiles
+The raw data or transformation pass is proceeding  
+     48 cases are written to the compressed active file.
+   iaa iac ias iap iam icc ics icp icm iss isp ism ipp ipm imm
+  /dependent=lntotexp
+  /method=enter.
+-------------------------------------------------------------------------------
+Page   8                          SPSS/PC+                             10/9/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+
+Listwise Deletion of Missing Data
+
+Equation Number 1    Dependent Variable..   LNTOTEXP
+
+Block Number  1.  Method:  Enter
+-------------------------------------------------------------------------------
+Page   9                          SPSS/PC+                             10/9/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   LNTOTEXP
+
+
+Variable(s) Entered on Step Number
+   1..    IMM
+   2..    LNPURB
+   3..    LNSING
+   4..    IAA
+   5..    LNCOMB
+   6..    IPP
+   7..    ISP
+   8..    IAP
+   9..    ICC
+  10..    IPM
+  11..    ICP
+  12..    LNMILES
+  13..    ISM
+  14..    LNAUTO
+-------------------------------------------------------------------------------
+Page  10                          SPSS/PC+                             10/9/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   LNTOTEXP
+
+
+
+Multiple R           .96631
+R Square             .93376
+Adjusted R Square    .90063
+Standard Error       .26190
+
+Analysis of Variance
+                    DF      Sum of Squares      Mean Square
+Regression          14            27.07116          1.93365
+Residual            28             1.92054           .06859
+
+F =      28.19113       Signif F =  .0000
+-------------------------------------------------------------------------------
+Page  11                          SPSS/PC+                             10/9/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   LNTOTEXP
+
+
+------------------ Variables in the Equation ------------------
+
+Variable              B        SE B       Beta         T  Sig T
+
+IMM             .114058     .118628   2.671110      .961  .3445
+LNPURB        -3.468269    5.072933  -1.543603     -.684  .4998
+LNSING         2.944592    1.872329   3.593283     1.573  .1270
+IAA            -.010269     .129234   -.252767     -.079  .9372
+LNCOMB        -1.832237    2.422317  -1.985724     -.756  .4557
+IPP             .182051     .886087    .137739      .205  .8387
+ISP             .596410     .526716   1.884143     1.132  .2671
+IAP             .182486     .683276    .660411      .267  .7914
+ICC             .110011     .135096   1.918394      .814  .4223
+IPM             .228686     .328634   1.171793      .696  .4922
+ICP            -.648769     .702476  -2.054067     -.924  .3636
+LNMILES        -.437228    2.219012   -.463862     -.197  .8452
+ISM            -.223765     .162157  -4.465570    -1.380  .1785
+LNAUTO          .691937    3.029380    .855263      .228  .8210
+-------------------------------------------------------------------------------
+Page  12                          SPSS/PC+                             10/9/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   LNTOTEXP
+
+
+------------------ Variables in the Equation ------------------
+
+Variable              B        SE B       Beta         T  Sig T
+
+(Constant)     2.395400    9.347436                 .256  .7996
+
+
+------------- Variables not in the Equation -------------
+
+Variable     Beta In  Partial  Min Toler         T  Sig T
+
+IAC        -2.204344 -.043625 2.5946E-05     -.227  .8222
+IAS        -8.458116 -.191716 3.4034E-05    -1.015  .3191
+IAM         2.145398  .052401 3.9519E-05      .273  .7872
+ICS        -2.256121 -.070824 6.5282E-05     -.369  .7150
+ICM         6.447919  .146395 3.4148E-05      .769  .4486
+ISS        -1.008215 -.057134 8.8677E-05     -.297  .7685
+-------------------------------------------------------------------------------
+Page  13                          SPSS/PC+                             10/9/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   LNTOTEXP
+
+
+End Block Number   1   Tolerance = 1.00E-04 Limits reached.
+-------------------------------------------------------------------------------
+Page  14                          SPSS/PC+                             10/9/95 
+
+This procedure was completed at 16:21:42
+
+regression variables= lntotexp lnauto lncomb lnsing lnpurb
+   iaa iac ias iap icc ics icp iss isp ipp
+  /dependent=lntotexp
+  /method=enter.
+-------------------------------------------------------------------------------
+Page  15                          SPSS/PC+                             10/9/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+
+Listwise Deletion of Missing Data
+
+Equation Number 1    Dependent Variable..   LNTOTEXP
+
+Block Number  1.  Method:  Enter
+-------------------------------------------------------------------------------
+Page  16                          SPSS/PC+                             10/9/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   LNTOTEXP
+
+
+Variable(s) Entered on Step Number
+   1..    IPP
+   2..    LNCOMB
+   3..    IAA
+   4..    IAP
+   5..    LNSING
+   6..    ISP
+   7..    ICC
+   8..    LNPURB
+   9..    ICP
+  10..    ISS
+  11..    LNAUTO
+-------------------------------------------------------------------------------
+Page  17                          SPSS/PC+                             10/9/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   LNTOTEXP
+
+
+
+Multiple R           .96086
+R Square             .92326
+Adjusted R Square    .89603
+Standard Error       .26790
+
+Analysis of Variance
+                    DF      Sum of Squares      Mean Square
+Regression          11            26.76690          2.43335
+Residual            31             2.22481           .07177
+
+F =      33.90585       Signif F =  .0000
+-------------------------------------------------------------------------------
+Page  18                          SPSS/PC+                             10/9/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   LNTOTEXP
+
+
+------------------ Variables in the Equation ------------------
+
+Variable              B        SE B       Beta         T  Sig T
+
+IPP            -.252098     .643041   -.190737     -.392  .6977
+LNCOMB         1.132313    2.705273   1.227167      .419  .6784
+IAA            -.073085     .112713  -1.798907     -.648  .5215
+IAP             .507593     .570084   1.836961      .890  .3801
+LNSING        -1.623659    2.420225  -1.981350     -.671  .5073
+ISP             .364262     .719335   1.150755      .506  .6162
+ICC            -.063304     .144901  -1.103897     -.437  .6652
+LNPURB        -4.494669    4.591171  -2.000417     -.979  .3352
+ICP            -.444022     .788134  -1.405819     -.563  .5772
+ISS             .103236     .126120   2.127707      .819  .4193
+LNAUTO         2.269434    2.580987   2.805116      .879  .3860
+(Constant)     -.375581    9.608407                -.039  .9691
+-------------------------------------------------------------------------------
+Page  19                          SPSS/PC+                             10/9/95 
+
+         * * * *   M U L T I P L E   R E G R E S S I O N   * * * *
+
+Equation Number 1    Dependent Variable..   LNTOTEXP
+
+
+------------- Variables not in the Equation -------------
+
+Variable     Beta In  Partial  Min Toler         T  Sig T
+
+IAC        -9.643193 -.173231 2.4764E-05     -.963  .3431
+IAS       -10.761304 -.304973 6.1633E-05    -1.754  .0896
+ICS       -17.954669 -.223531 1.1894E-05    -1.256  .2188
+
+
+End Block Number   1   Tolerance = 1.00E-04 Limits reached.
+-------------------------------------------------------------------------------
+Page  20                          SPSS/PC+                             10/9/95 
+
+This procedure was completed at 16:22:29
+-------------------------------------------------------------------------------
+Page  21                          SPSS/PC+                             10/9/95 
+
+FINISH.
+
+End of Include file.
