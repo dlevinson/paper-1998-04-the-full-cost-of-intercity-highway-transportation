@@ -10,7 +10,7 @@
 
 This package has been rebuilt from the paper outward. The article estimates component-by-component full costs for intercity highway transportation: user costs, infrastructure costs, free-flow and congested time costs, accident costs, highway noise costs, and pollution costs. The package stages the highway-specific Full Cost Project C4 Highway and HIGHWAYS archive materials that correspond to those calculations.
 
-The package is treated as `READY-TO-UPLOAD/PUBLIC` because the staged materials are aggregate/model/statistical inputs, legacy scripts/control files, and derived workbooks; no human-subject microdata or confidential records were found in the selected payload. Repository-level provenance wording should still identify public/statistical sources such as FHWA Highway Statistics, BLS/Census wage and bond inputs, AAA operating-cost assumptions, NHTSA/FHWA crash-cost sources, and published environmental/noise studies.
+The package is treated as `UPLOADED` because the staged materials are aggregate/model/statistical inputs, legacy scripts/control files, and derived workbooks; no human-subject microdata or confidential records were found in the selected payload. Repository-level provenance wording should still identify public/statistical sources such as FHWA Highway Statistics, BLS/Census wage and bond inputs, AAA operating-cost assumptions, NHTSA/FHWA crash-cost sources, and published environmental/noise studies.
 
 Shared Full Cost social-cost report/model files are not duplicated here. Those files live under `_shared_sources/full-cost-intercity-transportation-1996/`; this package keeps only pointer documentation plus the paper-specific highway C4/HIGHWAYS materials.
 
@@ -40,7 +40,7 @@ No further hard-drive search is expected for this paper. Before public upload, w
 
 Generated: 2026-05-20 15:23:47 AEST
 
-- Pipeline: `READY-TO-UPLOAD/PUBLIC`
+- Pipeline: `UPLOADED`
 - Sidecars added/updated: `PACKAGE_STATUS.md`, `PACKAGE_MANIFEST.csv`, `LICENSE_STATUS.md`.
 - Paper reference copies are for local audit convenience and are not public-upload assets without rights review.
 - Final GitHub upload should use the manifest include statuses and the license-status note.

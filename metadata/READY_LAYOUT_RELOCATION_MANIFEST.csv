@@ -1,2 +1,2 @@
 row_id,title,pipeline,action,classification,confidence,reason,old_relative_path,new_relative_path,size_bytes,sha256_before,sha256_after,checksum_match
-paper-1998-04,The Full Cost Of Intercity Highway Transportation,READY-TO-UPLOAD/PUBLIC,moved,data,high,data suffix,DEDUP_POINTER_MANIFEST.csv,data/DEDUP_POINTER_MANIFEST.csv,8233,575780f1b238058ea9e52562fa4ad9bd162048d3c1f86f6fd4649a7f29f0ccf7,575780f1b238058ea9e52562fa4ad9bd162048d3c1f86f6fd4649a7f29f0ccf7,yes
+paper-1998-04,The Full Cost Of Intercity Highway Transportation,UPLOADED,moved,data,high,data suffix,DEDUP_POINTER_MANIFEST.csv,data/DEDUP_POINTER_MANIFEST.csv,8233,575780f1b238058ea9e52562fa4ad9bd162048d3c1f86f6fd4649a7f29f0ccf7,575780f1b238058ea9e52562fa4ad9bd162048d3c1f86f6fd4649a7f29f0ccf7,yes
