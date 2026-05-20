@@ -1,6 +1,6 @@
 # License Status: The Full Cost of Intercity Highway Transportation
 
-Generated: 2026-05-20 14:46:37 AEST
+Generated: 2026-05-20 15:23:47 AEST
 
 Recorded license/access note from the verified audit row: Publisher terms apply to the paper; provenance/license notes apply to public/statistical source inputs and derived local model files. Shared Full Cost report/model files should be cited once, not duplicated per paper.
 
