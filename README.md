@@ -1,5 +1,9 @@
 # The Full Cost of Intercity Highway Transportation
 
+## Contribution
+
+This paper develops a comprehensive full-cost model for intercity highway travel, distinguishing private and social, average and marginal, and short- and long-run costs. Its component estimates cover vehicles, infrastructure, travel time, congestion, noise, crashes, and pollution and reveal free-flow travel time as the largest cost category.
+
 ## Bibliographic Information
 
 - Row ID: `paper-1998-04`
